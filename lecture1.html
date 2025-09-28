@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend React Course</title>
+    <link rel="stylesheet" href="./assets/lecture.css">
+</head>
+<body>
+    <header>
+        <div class="course-info">
+            <h1>Frontend React Course - Ousus</h1>
+            <p>Coach: <a href="https://www.moonesmezher.com" target="_blank" class="highlight">Moones Mezher</a></p>
+        </div>
+    </header>
+
+    <div class="navigation">
+        <button class="nav-btn active" data-section="content">Content</button>
+        <button class="nav-btn" data-section="examples">Examples</button>
+        <button class="nav-btn" data-section="practice">Practice</button>
+        <button class="nav-btn" data-section="questions">Questions</button>
+    </div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Lecture Topics</h2>
+            <ul class="topics-list" id="topics-list">
+                <!-- Topics will be dynamically generated -->
+            </ul>
+        </aside>
+
+        <main class="content-area">
+            <div id="content-section" class="content-section active">
+                <h2 class="topic-title" id="current-topic-title">Select a topic</h2>
+                <div id="topic-content">
+                    <!-- Content will be dynamically generated -->
+                </div>
+            </div>
+
+            <div id="examples-section" class="content-section">
+                <h2 class="topic-title" id="current-example-title">Select a topic</h2>
+                <div id="topic-examples">
+                    <!-- Examples will be dynamically generated -->
+                </div>
+            </div>
+
+            <div id="practice-section" class="content-section">
+                <h2 class="topic-title" id="current-practice-title">Select a topic</h2>
+                <div id="topic-practice">
+                    <!-- Practice will be dynamically generated -->
+                </div>
+            </div>
+
+            <div id="questions-section" class="content-section">
+                <h2 class="topic-title" id="current-question-title">Select a topic</h2>
+                <div id="topic-questions">
+                    <!-- Questions will be dynamically generated -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="./assets/lecture1.js"></script>
+</body>
+</html>

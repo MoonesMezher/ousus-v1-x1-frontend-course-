@@ -1,0 +1,442 @@
+const lectures = [
+    {
+        id: "html-basics",
+        number: 1,
+        title: "Intro + HTML Fundamentals: Structure and Basic Tags",
+        description: "Introduction, Setup, HTML Introduction, HTML Syntax, Links and Anchor Elements, HTML Formatting and Spacing",
+        duration: "2h",
+        status: "completed",
+        content: "Full content for HTML basics..."
+    },
+    {
+        id: "html-forms-validation",
+        number: 2,
+        title: "HTML Forms, Inputs, and Client-Side Validation",
+        description: "Form elements (input types: text, email, password, checkbox, radio; textarea, select), labels, validation attributes (required, min/max, pattern), and fieldset/legend",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for HTML forms..."
+    },
+    {
+        id: "css-syntax-selectors",
+        number: 3,
+        title: "CSS Syntax: Rules, Selectors, and the Cascade",
+        description: "CSS rulesets, embedding methods (inline, internal, external), selector types (element, class, ID, attribute, descendant, child, pseudo-classes like :hover), specificity rules, and the cascade/inheritance",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for CSS syntax and selectors..."
+    },
+    {
+        id: "css-box-model",
+        number: 4,
+        title: "The CSS Box Model: Dimensions, Margins, Borders, and Padding",
+        description: "Breakdown of content, padding, border, margin; width/height calculations, box-sizing (content-box vs. border-box), margin collapse, and practical exercises with outlines",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for CSS box model..."
+    },
+    {
+        id: "css-typography-colors",
+        number: 5,
+        title: "CSS Typography, Colors, and Text Properties",
+        description: "Font properties (family, size, weight, style, line-height, variant), text alignment/decoration/transform, color models (named, hex, rgb, rgba, hsl, hsla), and CSS custom properties (variables) for themes",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for CSS typography and colors..."
+    },
+    {
+        id: "css-backgrounds-borders",
+        number: 6,
+        title: "CSS Backgrounds, Borders, and Visual Effects",
+        description: "Background properties (color, image, position, size, repeat, attachment, clip), border styles (width, style, color, radius, image), outline, and box-shadow for depth",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for CSS backgrounds and borders..."
+    },
+    {
+        id: "css-positioning-floats",
+        number: 7,
+        title: "CSS Positioning Schemes and Floats",
+        description: "Position values (static, relative, absolute, fixed, sticky), top/right/bottom/left offsets, z-index stacking, float/clear properties, and when to avoid floats in modern layouts",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for CSS positioning..."
+    },
+    {
+        id: "css-flexbox-basics",
+        number: 8,
+        title: "CSS Flexbox: Container Properties and Layout Axis",
+        description: "Flexbox overview, display: flex, main/cross axis, flex-direction (row/column), justify-content (flex-start, center, space-between), align-items (stretch, center, baseline), and flex-wrap",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for Flexbox basics..."
+    },
+    {
+        id: "css-flexbox-advanced",
+        number: 9,
+        title: "CSS Flexbox: Item Properties and Complex Layouts",
+        description: "Flex items: flex-grow, flex-shrink, flex-basis, align-self, order; building responsive navbars, card grids, and centering techniques with real-world examples",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for advanced Flexbox..."
+    },
+    {
+        id: "css-grid-basics",
+        number: 10,
+        title: "CSS Grid: Container Setup and Template Definition",
+        description: "Display: grid, grid-template-columns/rows (fixed, fr, auto), grid-gap (row/column), justify-items/align-items, and grid-auto-flow",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for Grid basics..."
+    },
+    {
+        id: "css-responsive-animations",
+        number: 11,
+        title: "Responsive Design, Media Queries, and CSS Animations",
+        description: "Media queries (@media, logical operators), breakpoints, viewport meta, clamp() for fluid sizing; transitions (property, duration, timing-function), @keyframes animations, and transforms (scale, rotate, translate)",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for responsive CSS and animations..."
+    },
+    {
+        id: "tailwind",
+        number: 12,
+        title: "Tailwind CSS: Classes, Flexbox, Grid, and Responsive Design",
+        description: "Tailwind classes for flex (flex, justify, items), grid (grid-cols, gap), responsive prefixes (sm:, md:, lg:), and building mobile-first components with hover/focus states",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for Tailwind layouts..."
+    },
+    {
+        id: "js-syntax-variables",
+        number: 13,
+        title: "JavaScript Syntax: Variables, Data Types, and Operators",
+        description: "Declaring variables (var, let, const), primitive types (string, number, boolean, null, undefined, symbol, bigint), objects/arrays literals, type coercion, and operators (arithmetic, assignment, comparison, logical, ternary)",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for JS variables and types..."
+    },
+    {
+        id: "js-functions-scope",
+        number: 14,
+        title: "Functions, Scope, Hoisting, and Closures",
+        description: "Function declarations vs. expressions vs. arrow functions, parameters/rest/spread, default values, scope (global, function, block), hoisting behavior, and basic closures",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for JS functions and scope..."
+    },
+    {
+        id: "js-control-structures",
+        number: 15,
+        title: "Control Structures: Conditionals, Loops, and Error Handling",
+        description: "If/else, switch, ternary operators; loops (for, while, do-while, for...of/in); break/continue/return; try/catch for errors",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for JS control flow..."
+    },
+    {
+        id: "js-arrays-methods",
+        number: 16,
+        title: "Arrays: Methods and Manipulation",
+        description: "Array creation, indexing, methods (push/pop/shift/unshift, slice/splice, concat, includes, indexOf); iteration (forEach, map, filter, reduce, every/some/find)",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for JS arrays..."
+    },
+    {
+        id: "js-objects-es6-destructuring",
+        number: 17,
+        title: "Objects, Prototypes, and ES6+ Destructuring/Spread Operators",
+        description: "Object creation (literals, constructors), accessing properties (dot/bracket), methods, this keyword, Object methods (keys/values/entries, assign), and prototype basics; array/object destructuring with defaults/nesting, spread operator for shallow copies/merging, rest parameters for functions",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for JS objects, prototypes, and ES6 destructuring/spread..."
+    },
+    {
+        id: "es6-modules-promises",
+        number: 18,
+        title: "ES6+: Modules, Promises, and Async Basics",
+        description: "Import/export syntax (default/named), dynamic imports; promises (resolve/reject, chaining, .then/.catch), async/await with try/catch",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for ES6 modules and promises..."
+    },
+    {
+        id: "js-dom-selection",
+        number: 19,
+        title: "JavaScript DOM: Selecting and Traversing Elements",
+        description: "DOM tree overview, selecting elements (getElementById, getElementsByClassName/TagName, querySelector/All), node properties (parent/child/siblings), traversing (next/previousElementSibling)",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for JS DOM selection..."
+    },
+    {
+        id: "js-dom-manipulation-events",
+        number: 20,
+        title: "DOM Manipulation and Event Handling",
+        description: "Modifying elements (innerHTML/textContent, attributes, styles, classList); creating/removing elements (createElement, appendChild, remove); events (addEventListener, event object, bubbling, preventDefault, delegation)",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for JS DOM manipulation and events..."
+    },
+    {
+        id: "js-apis-fetch",
+        number: 21,
+        title: "Working with APIs: Fetch, JSON, and Async Data Handling",
+        description: "Fetch API for GET/POST requests, handling responses (json(), text()), headers, async/await with APIs, CORS basics, and error handling for network issues",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for JS APIs and fetch..."
+    },
+    {
+        id: "git-intro",
+        number: 22,
+        title: "Git Version Control: Basics and Local Workflow",
+        description: "Git installation, configuration (user.name/email), initializing repos, staging changes (git add), committing (git commit -m), viewing history (git log/status/diff), and undoing changes (git checkout/reset)",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for Git basics..."
+    },
+    {
+        id: "github-collaboration",
+        number: 23,
+        title: "GitHub: Remote Repositories, Branching, and Collaboration",
+        description: "Creating/pushing to GitHub repos (git remote/clone/push/pull), branching (git branch/checkout), merging conflicts, pull requests, forks, and collaborative workflows like feature branches and code reviews",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for GitHub and collaboration..."
+    },
+    {
+        id: "react-setup-components",
+        number: 24,
+        title: "React Fundamentals: Setup, Components, and JSX",
+        description: "Creating a React app with Create React App or Vite, functional components, JSX syntax (expressions, attributes, fragments), rendering lists, and props for data passing",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for React setup and components..."
+    },
+    {
+        id: "react-state-effects",
+        number: 25,
+        title: "React State Management and Hooks: useState & useEffect",
+        description: "Local state with useState (initializers, updaters), rules of hooks; useEffect for side effects (fetching data, subscriptions), dependencies, cleanup, and lifecycle simulation",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for React state and effects..."
+    },
+    {
+        id: "react-events-forms",
+        number: 26,
+        title: "React Events, Forms, and Conditional Rendering",
+        description: "Event handling in React (onClick, onChange), controlled components for forms, validation, conditional rendering (&&, ternary), and keys in lists",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for React events and forms..."
+    },
+    {
+        id: "react-advanced-hooks",
+        number: 27,
+        title: "React Advanced Hooks: useReducer, useMemo, useCallback, and Custom Hooks",
+        description: "Complex state logic with useReducer (actions, dispatchers); performance optimization using useMemo for computed values and useCallback for stable functions; creating reusable custom hooks for logic extraction",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for React advanced hooks..."
+    },
+    {
+        id: "react-router-context",
+        number: 28,
+        title: "React Router, Context API, and Advanced Patterns",
+        description: "Installing/configuring React Router (Routes, Route, Link, useParams/useNavigate); Context API for global state (createContext, Provider, useContext); integrating with Tailwind for styling",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for React Router and Context..."
+    },
+    {
+        id: "zustand-state",
+        number: 29,
+        title: "State Management with Zustand",
+        description: "Installing Zustand, creating stores (create), selectors (useStore), actions/updates, persistence, and combining with React hooks for scalable global state without prop drilling",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for Zustand..."
+    },
+    {
+        id: "axios-deployment-ai",
+        number: 30,
+        title: "Real-World Tools: Axios, Deployment to Render, and AI Integration",
+        description: "Using Axios for API requests (interceptors, auth); building/deploying React apps to Render (environment vars, CI/CD with GitHub); leveraging AI tools (e.g., GitHub Copilot, ChatGPT) for code generation, debugging, and problem-solving in frontend development",
+        duration: "2h",
+        status: "not-started",
+        content: "Full content for Axios, deployment, and AI..."
+    }
+];
+
+// DOM Elements
+const lecturesTableBody = document.getElementById('lectures-table-body');
+const searchInput = document.getElementById('search-input');
+const searchBtn = document.getElementById('search-btn');
+const statusFilter = document.getElementById('status-filter');
+const sortBy = document.getElementById('sort-by');
+const totalLecturesEl = document.getElementById('total-lectures');
+const completedLecturesEl = document.getElementById('completed-lectures');
+const inProgressLecturesEl = document.getElementById('in-progress-lectures');
+const totalDurationEl = document.getElementById('total-duration');
+
+// Initialize the portal
+function initPortal() {
+    renderLecturesTable(lectures);
+    updateStatistics();
+    setupEventListeners();
+}
+
+// Render the lectures table
+function renderLecturesTable(lecturesToRender) {
+    lecturesTableBody.innerHTML = '';
+    
+    lecturesToRender.forEach(lecture => {
+        const row = document.createElement('tr');
+        
+        // Determine status badge class
+        let statusClass = '';
+        let statusText = '';
+        
+        switch(lecture.status) {
+            case 'completed':
+                statusClass = 'status-completed';
+                statusText = 'Completed';
+                break;
+            case 'in-progress':
+                statusClass = 'status-in-progress';
+                statusText = 'In Progress';
+                break;
+            default:
+                statusClass = 'status-not-started';
+                statusText = 'Not Started';
+        }
+        
+        row.innerHTML = `
+            <td class="lecture-number">${lecture.number}</td>
+            <td>
+                <div class="lecture-title">${lecture.title}</div>
+            </td>
+            <td class="lecture-description">${lecture.description}</td>
+            <td class="lecture-duration">${lecture.duration}</td>
+            <td class="lecture-status">
+                <span class="status-badge ${statusClass}">${statusText}</span>
+            </td>
+            <td>
+                <button class="action-btn" data-lecture-id="${lecture.number}">View</button>
+            </td>
+        `;
+        
+        lecturesTableBody.appendChild(row);
+    });
+    
+    // Add event listeners to view buttons
+    document.querySelectorAll('.action-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const lectureId = this.getAttribute('data-lecture-id');
+            viewLecture(lectureId);
+        });
+    });
+}
+
+// Update statistics
+function updateStatistics() {
+    const total = lectures.length;
+    const completed = lectures.filter(l => l.status === 'completed').length;
+    const inProgress = lectures.filter(l => l.status === 'in-progress').length;
+    
+    // Calculate total duration
+    let totalMinutes = 0;
+    lectures.forEach(lecture => {
+        const duration = lecture.duration;
+        if (duration.includes('h')) {
+            const hours = parseFloat(duration);
+            totalMinutes += hours * 60;
+        }
+    });
+    const totalHours = Math.round(totalMinutes / 60);
+    
+    totalLecturesEl.textContent = total;
+    completedLecturesEl.textContent = completed;
+    inProgressLecturesEl.textContent = inProgress;
+    totalDurationEl.textContent = `${totalHours}h`;
+}
+
+// Filter and search lectures
+function filterLectures() {
+    const searchTerm = searchInput.value.toLowerCase();
+    const statusValue = statusFilter.value;
+    const sortValue = sortBy.value;
+    
+    let filteredLectures = lectures.filter(lecture => {
+        const matchesSearch = lecture.title.toLowerCase().includes(searchTerm) || 
+                                lecture.description.toLowerCase().includes(searchTerm);
+        
+        const matchesStatus = statusValue === 'all' || lecture.status === statusValue;
+        
+        return matchesSearch && matchesStatus;
+    });
+    
+    // Sort lectures
+    filteredLectures.sort((a, b) => {
+        if (sortValue === 'title') {
+            return a.title.localeCompare(b.title);
+        } else if (sortValue === 'duration') {
+            const aDuration = parseFloat(a.duration);
+            const bDuration = parseFloat(b.duration);
+            return bDuration - aDuration;
+        } else {
+            return a.number - b.number;
+        }
+    });
+    
+    renderLecturesTable(filteredLectures);
+}
+
+// View lecture details
+function viewLecture(lectureId) {        
+    if(!lectureId) {
+        alert(`Invalid Lecture Id`);
+        return;
+    }
+
+    const lecture = lectures.find(e => e.number === +lectureId);    
+
+    if(!lecture) {
+        alert("Invalid Lecture Id");
+        return;
+    }
+
+    if(lecture.status === "not-started") {
+        alert("You can not visit not-completed lecture");
+        return;
+    }
+    // For demonstration, we'll highlight the selected lecture
+    document.querySelectorAll('.action-btn').forEach(btn => {
+        btn.textContent = 'View';
+        btn.style.backgroundColor = '';
+    });
+    
+    const selectedBtn = document.querySelector(`.action-btn[data-lecture-id="${lectureId}"]`);
+
+    if (selectedBtn) {
+        window.location.assign(`lecture${lectureId}.html`)
+    }
+}
+
+// Set up event listeners
+function setupEventListeners() {
+    searchBtn.addEventListener('click', filterLectures);
+    searchInput.addEventListener('keyup', function(event) {
+        if (event.key === 'Enter') {
+            filterLectures();
+        }
+    });
+    statusFilter.addEventListener('change', filterLectures);
+    sortBy.addEventListener('change', filterLectures);
+}
+
+// Initialize the portal when the DOM is loaded
+document.addEventListener('DOMContentLoaded', initPortal);

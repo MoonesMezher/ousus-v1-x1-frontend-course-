@@ -3,7 +3,7 @@ const courseData = {
     courseInfo: {
         name: "Frontend React",
         coach: "Moones Mezher",
-        center: "Ousus"
+        center: "Ousos"
     },
     topics: [
         {
@@ -36,6 +36,36 @@ const courseData = {
                 <p>Each web page within a website is typically written in HTML and may include text, images, videos, and other multimedia content. Websites can serve various purposes, such as providing information, offering services, or facilitating online transactions.</p>
                 <p><strong>In summary</strong>, a web browser is the tool used to access and view websites, while a website is the collection of content that users visit through the browser.</p>
                 <p><strong>Analogy</strong>: Web Browsers like TVs, and Websites like Movies</p>
+
+                <br><hr><br>
+                <div dir="rtl">
+                    <h3>ماذا احتاج؟</h3>
+                    <ul>
+                        <li>ابحث باستمرار</li>
+                        <li>ضع هدف</li>
+                        <li>التركيز</li>
+                        <li>اسأل باستمرار</li>
+                    </ul>
+                    
+                    <h3>قبل البدء</h3>
+                    <p>يجب تنزيل:</p>
+                    <ul>
+                        <li>متصفح ويب لعرض المواقع مثل كروم</li>
+                        <li>محرر أكواد لكتابة الكود مثل vsc</li>
+                    </ul>
+                    
+                    <h3>ما هو متصفح الويب؟</h3>
+                    <p>يعمل متصفح الويب كنافذة على الإنترنت. إنه البرنامج الذي يتيح لك زيارة صفحات الويب وعرضها (تصفحها). إذا كنت تعرف عنوان الويب (URL) أو نقرت على رابط، فسينقلك متصفح الويب إلى الموقع.</p>
+                    
+                    <h3>ما الفرق بين متصفح الويب وموقع الويب؟</h3>
+                    <ul>
+                        <li>تفسر المتصفحات وتعرض لغات HTML وCSS وJavaScript، مما يُمكّن المستخدمين من التفاعل مع صفحات الويب. كما توفر ميزات مثل الإشارات المرجعية وعلامات التبويب والإضافات لتحسين تجربة التصفح.</li>
+                        <li>موقع الويب هو مجموعة من صفحات الويب المترابطة المُستضافة على خادم ويمكن الوصول إليها عبر الإنترنت. يتم تعريف مواقع الويب باسم نطاق فريد (مثل www.example.com).</li>
+                    </ul>
+                    <p>تكتب كل صفحة ويب داخل موقع ويب عادةً بلغة HTML، وقد تتضمن نصوصًا وصورًا ومقاطع فيديو ومحتوى وسائط متعددة آخر. يمكن أن تخدم مواقع الويب أغراضًا متعددة، مثل توفير المعلومات، وتقديم الخدمات، أو تسهيل المعاملات عبر الإنترنت.</p>
+                    <p><strong>باختصار</strong>,  متصفح الويب هو الأداة المستخدمة للوصول إلى مواقع الويب وعرضها، بينما موقع الويب هو مجموعة المحتوى الذي يزوره المستخدمون من خلال المتصفح.</p>
+                    <p><strong>تشبيه</strong>:  متصفحات الويب مثل أجهزة التلفزيون، ومواقع الويب مثل الأفلام</p>
+                </div>
             `,
             examples: [
                 {
@@ -97,6 +127,26 @@ const courseData = {
                     <li>ESLint - for code linting</li>
                     <li>Auto Rename Tag - automatically renames paired HTML tags</li>
                 </ul>
+
+                <br><hr><br>
+                <div dir="rtl">
+                    <h3>إعداد بيئة التطوير</h3>
+                    <p>للبدء في تطوير الويب، تحتاج إلى إعداد بيئة التطوير الخاصة بك:</p>
+                    <ul>
+                        <li>قم بتثبيت متصفح ويب حديث (Chrome, Firefox, Edge, إلخ)</li>
+                        <li>قم بتثبيت محرر أكواد (يوصى بشدة بـ VS Code)</li>
+                        <li>أنشئ مجلدًا مخصصًا لمشاريعك</li>
+                    </ul>
+                    
+                    <h3>إعداد VS Code</h3>
+                    <p>بعد تثبيت VS Code، فكر في تثبيت هذه الإضافات المفيدة:</p>
+                    <ul>
+                        <li>Live Server - لمعاينة ملفات HTML الخاصة بك</li>
+                        <li>Prettier - لتنسيق الكود</li>
+                        <li>ESLint - لفحص جودة الكود</li>
+                        <li>Auto Rename Tag - يعيد تسمية وسوم HTML المقترنة تلقائيًا</li>
+                    </ul>
+                </div>
             `,
             examples: [
                 {
@@ -155,6 +205,27 @@ const courseData = {
                 
                 <h3>Why start with HTML?</h3>
                 <p>HTML is the foundation of web development. It's the first step in both frontend and backend development stacks.</p>
+
+                <br><hr><br>
+                <div dir="rtl">
+                    <h3>ما هو HTML؟</h3>
+                    <p>HTML تعني لغة ترميز النص الفائق. إنها لغة الترميز القياسية لإنشاء صفحات الويب.</p>
+                    <ul>
+                        <li>إنها أداة نستخدمها لإنشاء المواقع الإلكترونية وبناء الويب</li>
+                        <li>تعطي تعليمات لمتصفحات الويب حول كيفية عرض المحتوى</li>
+                        <li>نستخدم الوسوم &lt;tag&gt;&lt;/tag&gt; (عناصر HTML) كبناء جملة</li>
+                        <li>ملفات HTML لها امتداد .html</li>
+                    </ul>
+                    
+                    <h3>ما هو مفهوم ال syntax؟</h3>
+                    <p>يشير بناء الجملة إلى القواعد الخاصة بكتابة مثل القواعد النحوية في اللغات الطبيعية. كل لغة برمجة لها قواعد بناء جملة محددة يجب اتباعها.</p>
+                    
+                    <h3>ما هو HTML5؟</h3>
+                    <p>HTML5 هو الإصدار الخامس والحالي الرئيسي من HTML. قدم العديد من الميزات وواجهات برمجة التطبيقات الجديدة التي تجعل إنشاء تطبيقات الويب الغنية أسهل.</p>
+                    
+                    <h3>لماذا نبدأ بـ HTML؟</h3>
+                    <p>HTML هو أساس تطوير الويب. إنها الخطوة الأولى في كل من مسارات تطوير الواجهة الأمامية والخلفية.</p>
+                </div>
             `,
             examples: [
                 {
@@ -216,6 +287,25 @@ const courseData = {
                 
                 <h3>What are HTML Attributes?</h3>
                 <p>Attributes provide additional information about HTML elements and modify how they behave. Each HTML element has specific attributes that can be used with it.</p>
+
+                <br><hr><br>
+                <div dir="rtl">
+                    <h3>هيكل عنصر HTML</h3>
+                    <p>يتكون عنصر HTML من:</p>
+                    <ul>
+                        <li><strong>الوسم</strong>: &lt;p a="1" b="2" c="3"&gt;&lt;/p&gt;</li>
+                        <li><strong>اسم الوسم</strong>: p</li>
+                        <li><strong>وسم الفتح</strong>: &lt;p&gt;</li>
+                        <li><strong>وسم الإغلاق</strong>: &lt;/p&gt;</li>
+                        <li><strong>السمات</strong>: a, b, c (معدلات تغير كيفية تصرف العنصر)</li>
+                        <li><strong>قيم السمات</strong>: 1, 2, 3</li>
+                    </ul>
+                    
+                    <p><strong>ملاحظة</strong>: بعض الوسوم لا تحتوي على وسوم إغلاق (وسوم ذاتية الإغلاق).</p>
+                    
+                    <h3>ما هي سمات HTML؟</h3>
+                    <p>توفر السمات معلومات إضافية حول عناصر HTML وتعدل كيفية تصرفها. كل عنصر HTML له سمات محددة يمكن استخدامها معه.</p>
+                </div>
             `,
             examples: [
                 {
@@ -280,6 +370,30 @@ const courseData = {
                 </ul>
                 
                 <p><strong>Important</strong>: Each HTML element has specific attributes that work with it!</p>
+
+                <br><hr><br>
+                <div dir="rtl">
+                    <h3>عنصر الرابط: &lt;a href="/"&gt;مرحباً&lt;/a&gt;</h3>
+                    <p>ينشئ عنصر الرابط ارتباطات تشعبية إلى صفحات ويب أخرى أو ملفات أو مواقع أو عناوين بريد إلكتروني.</p>
+                    
+                    <h3>السمات الرئيسية:</h3>
+                    <ul>
+                        <li><strong>href</strong>: يحدد عنوان URL الوجهة (مطلوب)</li>
+                        <li><strong>target</strong>: يحدد كيفية فتح الرابط (_blank, _self, _parent, _top)</li>
+                        <li><strong>title</strong>: يوفر معلومات إضافية حول الرابط</li>
+                        <li><strong>rel</strong>: يحدد العلاقة بين المستند الحالي والمستند المرتبط</li>
+                    </ul>
+                    
+                    <h3>قيم href الخاصة:</h3>
+                    <ul>
+                        <li><strong>href="#id"</strong>: يربط بعنصر مع معرف محدد في نفس الصفحة</li>
+                        <li><strong>href="mailto:email@example.com"</strong>: يفتح عميل البريد الإلكتروني</li>
+                        <li><strong>href="tel:+123456789"</strong>: يفتح طلب الهاتف (على الجوال)</li>
+                        <li><strong>href="javascript:void(0)"</strong>: يمنع التنقل</li>
+                    </ul>
+                    
+                    <p><strong>مهم</strong>: كل عنصر HTML له سمات محددة تعمل معه!</p>
+                </div>
             `,
             examples: [
                 {
@@ -358,6 +472,34 @@ const courseData = {
                     <li>Add comments to explain complex sections</li>
                     <li>Group related elements together</li>
                 </ul>
+
+                <br><hr><br>
+                <div dir="rtl">
+                    <h3>المسافات والأسطر الإضافية في HTML</h3>
+                    <p>يقوم HTML بضم المسافات المتعددة وفواصل الأسطر إلى مسافة واحدة. هذا يسمى "انهيار المساحة البيضاء".</p>
+                    
+                    <h3>كيف يتعامل HTML مع المساحة البيضاء:</h3>
+                    <ul>
+                        <li>تصبح المسافات المتعددة مسافة واحدة</li>
+                        <li>يتم التعامل مع فواصل الأسطر كمسافات مفردة</li>
+                        <li>يتم التعامل مع علامات التبويب كمسافات مفردة</li>
+                    </ul>
+                    
+                    <h3>أول عناصر HTML الأساسية:</h3>
+                    <ul>
+                        <li><strong>&lt;html&gt;</strong>: العنصر الجذر لمستند HTML</li>
+                        <li><strong>&lt;head&gt;</strong>: يحتوي على معلومات وصفية (العنوان، وسوم الوصف، روابط لـ CSS/JS)</li>
+                        <li><strong>&lt;body&gt;</strong>: يحتوي على المحتوى المرئي لصفحة الويب</li>
+                    </ul>
+                    
+                    <h3>المسافات والتنسيق في HTML</h3>
+                    <p>يجعل التباعد المناسب الكود الخاص بك أكثر قابلية للقراءة والصيانة:</p>
+                    <ul>
+                        <li>استخدم المسافة البادئة لإظهار العلاقات بين العناصر الرئيسية والفرعية</li>
+                        <li>أضف تعليقات لشرح الأقسام المعقدة</li>
+                        <li>اجمع العناصر ذات الصلة معًا</li>
+                    </ul>
+                </div>
             `,
             examples: [
                 {

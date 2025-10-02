@@ -231,7 +231,7 @@ const courseData = {
                 {
                     title: "Basic HTML Structure",
                     content: `
-                        <div class="code-block">
+                        <pre class="code-block">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -312,7 +312,7 @@ const courseData = {
                     title: "HTML Element Examples",
                     content: `
                         <p>Examples of HTML elements with attributes:</p>
-                        <div class="code-block">
+                        <pre class="code-block">
 &lt;!-- Image with src and alt attributes --&gt;
 &lt;img src="image.jpg" alt="Description"&gt;
 
@@ -399,7 +399,7 @@ const courseData = {
                 {
                     title: "Link Examples",
                     content: `
-                        <div class="code-block">
+                        <pre class="code-block">
 &lt;!-- Basic link --&gt;
 &lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
 
@@ -506,7 +506,7 @@ const courseData = {
                     title: "White Space Example",
                     content: `
                         <p>This HTML:</p>
-                        <div class="code-block">
+                        <pre class="code-block">
 &lt;p&gt;Hello     World&lt;/p&gt;
 &lt;p&gt;Hello
 World&lt;/p&gt;
@@ -519,7 +519,7 @@ World&lt;/p&gt;
                 {
                     title: "Proper HTML Structure",
                     content: `
-                        <div class="code-block">
+                        <pre class="code-block">
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;

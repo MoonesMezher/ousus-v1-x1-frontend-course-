@@ -21,19 +21,19 @@ const lectures = [
         id: "html-3",
         number: 3,
         title: "Images, Lists, Tables, Forms, Semantic Elements",
-        description: "Images and Multimedia, Lists, HTML Tables, Container Elements and Layout, Advanced Multimedia, HTML Forms, Preformatted Text Element, IFrame Element, HTML Entities and Special Characters, HTML5 Semantic Elements Deep Dive, HTML Accessibility",
+        description: "Images and Multimedia, Lists, HTML Tables, Container Elements and Layout, Advanced Multimedia, Preformatted Text Element, IFrame Element",
         image: "./assets/images/logos/html.webp",
-        status: "in-progress",
+        status: "completed",
         content: "HTML"
     },
     {
-        id: "css-box-model",
+        id: "html-4",
         number: 4,
-        title: "The CSS Box Model: Dimensions, Margins, Borders, and Padding",
-        description: "Breakdown of content, padding, border, margin; width/height calculations, box-sizing (content-box vs. border-box), margin collapse, and practical exercises with outlines",
-        image: "./assets/images/logos/CSS.webp",
-        status: "not-started",
-        content: "Full content for CSS box model..."
+        title: "HTML Forms",
+        description: "HTML Forms, HTML Entities and Special Characters, HTML5 Semantic Elements Deep Dive, HTML Accessibility",
+        image: "./assets/images/logos/html.webp",
+        status: "in-progress",
+        content: "HTML"
     },
     {
         id: "css-typography-colors",

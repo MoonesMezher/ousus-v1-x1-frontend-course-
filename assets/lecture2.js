@@ -68,7 +68,7 @@ const courseData = {
                     title: "White Space Example",
                     content: `
                         <p>This HTML:</p>
-                        <div class="code-block">
+                        <pre class="code-block">
 &lt;p&gt;Hello     World&lt;/p&gt;
 &lt;p&gt;Hello
 World&lt;/p&gt;
@@ -81,7 +81,7 @@ World&lt;/p&gt;
                 {
                     title: "Proper HTML Structure",
                     content: `
-                        <div class="code-block">
+                        <pre class="code-block">
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -198,7 +198,7 @@ World&lt;/p&gt;
                 {
                     title: "Complete Head Section",
                     content: `
-                        <div class="code-block">
+                        <pre class="code-block">
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
@@ -218,7 +218,7 @@ World&lt;/p&gt;
                 {
                     title: "Comment Examples",
                     content: `
-                        <div class="code-block">
+                        <pre class="code-block">
 &lt;!-- This is a single line comment --&gt;
 
 &lt;!-- 
@@ -334,7 +334,7 @@ World&lt;/p&gt;
                 {
                     title: "Heading Structure Example",
                     content: `
-                        <div class="code-block">
+                        <pre class="code-block">
 &lt;h1&gt;Main Course Title&lt;/h1&gt;
 &lt;h2&gt;Chapter 1: HTML Basics&lt;/h2&gt;
 &lt;h3&gt;What is HTML?&lt;/h3&gt;
@@ -348,7 +348,7 @@ World&lt;/p&gt;
                 {
                     title: "Block vs Inline Example",
                     content: `
-                        <div class="code-block">
+                        <pre class="code-block">
 &lt;!-- Block elements --&gt;
 &lt;div&gt;This is a block element&lt;/div&gt;
 &lt;p&gt;This is a paragraph&lt;/p&gt;
@@ -451,7 +451,7 @@ World&lt;/p&gt;
                 {
                     title: "Formatting Examples",
                     content: `
-                        <div class="code-block">
+                        <pre class="code-block">
 &lt;!-- Semantic formatting --&gt;
 &lt;p&gt;This is &lt;strong&gt;very important&lt;/strong&gt; information.&lt;/p&gt;
 &lt;p&gt;Please &lt;em&gt;read carefully&lt;/em&gt; before proceeding.&lt;/p&gt;
@@ -467,7 +467,7 @@ World&lt;/p&gt;
                 {
                     title: "Practical Usage",
                     content: `
-                        <div class="code-block">
+                        <pre class="code-block">
 &lt;article&gt;
     &lt;h1&gt;Scientific Discovery&lt;/h1&gt;
     &lt;p&gt;The formula for energy is &lt;strong&gt;E = mc&lt;sup&gt;2&lt;/sup&gt;&lt;/strong&gt;.&lt;/p&gt;
@@ -579,7 +579,7 @@ World&lt;/p&gt;
                 {
                     title: "Image Examples",
                     content: `
-                        <div class="code-block">
+                        <pre class="code-block">
 &lt;!-- Basic image --&gt;
 &lt;img src="photo.jpg" alt="A beautiful landscape"&gt;
 
@@ -597,7 +597,7 @@ World&lt;/p&gt;
                 {
                     title: "List Examples",
                     content: `
-                        <div class="code-block">
+                        <pre class="code-block">
 &lt;!-- Unordered list --&gt;
 &lt;ul&gt;
     &lt;li&gt;Item 1&lt;/li&gt;

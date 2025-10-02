@@ -207,6 +207,7 @@ header {
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 600;
+    text-wrap-mode: nowrap;
 }
 
 .status-not-started {
@@ -383,6 +384,6 @@ header {
 
 @media screen and (max-width: 991px) {
     .lecture-img img {
-        border-radius: 10px !important;
+        border-radius: 2px !important;
     }
 }

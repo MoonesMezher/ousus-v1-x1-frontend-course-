@@ -2,7 +2,7 @@ const lectures = [
     {
         id: "1",
         title: "Travel Scape",
-        link: "TravelScape",
+        link: "/projects/TravelScape",
     },
 ];
 

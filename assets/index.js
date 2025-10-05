@@ -36,13 +36,13 @@ const lectures = [
         content: "HTML"
     },
     {
-        id: "css-typography-colors",
+        id: "css-1",
         number: 5,
         title: "CSS Typography, Colors, and Text Properties",
         description: "Font properties (family, size, weight, style, line-height, variant), text alignment/decoration/transform, color models (named, hex, rgb, rgba, hsl, hsla), and CSS custom properties (variables) for themes",
         image: "./assets/images/logos/CSS.webp",
         status: "not-started",
-        content: "Full content for CSS typography and colors..."
+        content: "CSS"
     },
     {
         id: "css-backgrounds-borders",

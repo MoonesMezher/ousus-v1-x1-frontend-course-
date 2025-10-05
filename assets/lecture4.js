@@ -378,7 +378,7 @@ const courseData = {
         },
         {
             id: "accessibility",
-            title: "HTML Accessibility",
+            title: "HTML Accessibility (Advanced)",
             content: `
                 <h3>Web Accessibility (a11y)</h3>
                 <p>Accessibility ensures websites can be used by people with disabilities:</p>
@@ -495,123 +495,6 @@ const courseData = {
                 }
             ]
         },
-        {
-            id: "html-task",
-            title: "HTML Research Task",
-            content: `
-                <h3>Research Task: Explore Additional HTML Elements</h3>
-                <p>Your task is to research and document additional HTML elements beyond what we've covered:</p>
-                
-                <h3>Research Categories:</h3>
-                <ul>
-                    <li><strong>Obsolete Elements</strong>: Elements no longer in HTML5</li>
-                    <li><strong>Experimental Elements</strong>: New or proposed elements</li>
-                    <li><strong>Specialized Elements</strong>: Elements for specific use cases</li>
-                    <li><strong>Global Attributes</strong>: Attributes that work on all elements</li>
-                </ul>
-                
-                <h3>Research Guidelines:</h3>
-                <ul>
-                    <li>Choose at least 10 less-common HTML elements</li>
-                    <li>Document their purpose and usage</li>
-                    <li>Provide code examples for each</li>
-                    <li>Note browser support and limitations</li>
-                    <li>Explain when to use (and when not to use) each element</li>
-                </ul>
-                
-                <h3>Suggested Elements to Research:</h3>
-                <ul>
-                    <li><strong>&lt;template&gt;</strong>: Client-side content template</li>
-                    <li><strong>&lt;slot&gt;</strong>: Placeholder in web components</li>
-                    <li><strong>&lt;dialog&gt;</strong>: Modal dialog box</li>
-                    <li><strong>&lt;picture&gt;</strong>: Responsive images</li>
-                    <li><strong>&lt;map&gt;</strong> and <strong>&lt;area&gt;</strong>: Image maps</li>
-                    <li><strong>&lt;output&gt;</strong>: Calculation results</li>
-                    <li><strong>&lt;wbr&gt;</strong>: Word break opportunity</li>
-                    <li><strong>&lt;bdi&gt;</strong>: Bi-directional isolation</li>
-                    <li><strong>&lt;bdo&gt;</strong>: Bi-directional override</li>
-                    <li><strong>&lt;canvas&gt;</strong>: Drawing graphics via JavaScript</li>
-                </ul>
-                
-                <h3>Documentation Format:</h3>
-                <p>Create a well-structured HTML file documenting your findings with:</p>
-                <ul>
-                    <li>Clear headings and organization</li>
-                    <li>Code examples in &lt;pre&gt;&lt;code&gt; blocks</li>
-                    <li>Browser compatibility notes</li>
-                    <li>Practical use cases</li>
-                    <li>Accessibility considerations</li>
-                </ul>
-            `,
-            examples: [
-                {
-                    title: "Research Template Example",
-                    content: `
-                        <pre class="code-block">
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;title&gt;HTML Elements Research&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;header&gt;
-        &lt;h1&gt;HTML Elements Research&lt;/h1&gt;
-    &lt;/header&gt;
-    
-    &lt;main&gt;
-        &lt;article id="template-element"&gt;
-            &lt;h2&gt;&amp;lt;template&amp;gt; Element&lt;/h2&gt;
-            &lt;p&gt;Purpose: Contains client-side content that can be instantiated...&lt;/p&gt;
-            
-            &lt;h3&gt;Example Usage:&lt;/h3&gt;
-            &lt;pre&gt;&lt;code&gt;
-&amp;lt;template id="user-card"&amp;gt;
-    &amp;lt;div class="card"&amp;gt;
-        &amp;lt;h3&amp;gt;&amp;lt;/h3&amp;gt;
-        &amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;
-    &amp;lt;/div&amp;gt;
-&amp;lt;/template&amp;gt;
-            &lt;/code&gt;&lt;/pre&gt;
-            
-            &lt;h3&gt;Browser Support:&lt;/h3&gt;
-            &lt;p&gt;Supported in all modern browsers...&lt;/p&gt;
-        &lt;/article&gt;
-        
-        &lt;!-- More elements here --&gt;
-    &lt;/main&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-                        </pre>
-                    `
-                }
-            ],
-            practices: [
-                {
-                    title: "Research Task Implementation",
-                    content: `
-                        <p>Complete the research task:</p>
-                        <ol>
-                            <li>Research at least 10 additional HTML elements</li>
-                            <li>Create a comprehensive HTML documentation file</li>
-                            <li>Include working examples for each element</li>
-                            <li>Test browser compatibility</li>
-                            <li>Add accessibility notes for each element</li>
-                            <li>Validate your HTML using the W3C validator</li>
-                        </ol>
-                    `
-                }
-            ],
-            questions: [
-                {
-                    question: "Why is it important to research beyond basic HTML elements?",
-                    answer: "Researching advanced and specialized HTML elements helps you build more semantic, accessible, and efficient websites. Understanding the full HTML specification allows you to choose the right tool for each job, write cleaner code, and stay current with web standards evolution."
-                },
-                {
-                    question: "How can I test browser compatibility for HTML elements?",
-                    answer: "Use resources like MDN Web Docs, Can I Use, and browser developer tools to test compatibility. Create test cases in different browsers, use feature detection, and consider polyfills for older browsers. Always test on actual devices when possible."
-                }
-            ]
-        }
         // Additional topics can be added here as needed
     ]
 };

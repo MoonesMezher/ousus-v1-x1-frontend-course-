@@ -20,7 +20,7 @@ const lectures = [
     {
         id: "html-3",
         number: 3,
-        title: "Images, Lists, Tables, Forms, Semantic Elements",
+        title: "Images, Lists, Tables, Semantic Elements",
         description: "Images and Multimedia, Lists, HTML Tables, Container Elements and Layout, Advanced Multimedia, Preformatted Text Element, IFrame Element",
         image: "./assets/images/logos/html.webp",
         status: "completed",
@@ -32,26 +32,26 @@ const lectures = [
         title: "HTML Forms",
         description: "HTML Forms, HTML Entities and Special Characters, HTML5 Semantic Elements Deep Dive, HTML Accessibility",
         image: "./assets/images/logos/html.webp",
-        status: "in-progress",
+        status: "completed",
         content: "HTML"
     },
     {
         id: "css-1",
         number: 5,
-        title: "CSS Typography, Colors, and Text Properties",
-        description: "Font properties (family, size, weight, style, line-height, variant), text alignment/decoration/transform, color models (named, hex, rgb, rgba, hsl, hsla), and CSS custom properties (variables) for themes",
+        title: "CSS Introduction, Selectors, Typography, Colors",
+        description: "CSS Introduction & Syntax, CSS Selectors & Specificity, Typography, Colors & CSS Variables",
         image: "./assets/images/logos/CSS.webp",
-        status: "not-started",
+        status: "completed",
         content: "CSS"
     },
     {
-        id: "css-backgrounds-borders",
+        id: "css-2",
         number: 6,
-        title: "CSS Backgrounds, Borders, and Visual Effects",
-        description: "Background properties (color, image, position, size, repeat, attachment, clip), border styles (width, style, color, radius, image), outline, and box-shadow for depth",
+        title: "Icons, Box Model, Backgrounds, Borders",
+        description: "Google Fonts Integration, Working with Icons, CSS Box Model - Complete Layout Foundation, Backgrounds, Borders",
         image: "./assets/images/logos/CSS.webp",
         status: "not-started",
-        content: "Full content for CSS backgrounds and borders..."
+        content: "CSS"
     },
     {
         id: "css-positioning-floats",

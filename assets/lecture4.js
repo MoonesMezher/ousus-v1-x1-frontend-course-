@@ -50,6 +50,50 @@ const courseData = {
                     <li><strong>&lt;legend&gt;</strong>: Caption for fieldset</li>
                     <li><strong>&lt;optgroup&gt;</strong>: Groups options in dropdown</li>
                 </ul>
+
+                <br><hr><br>
+                <div dir="rtl">
+                    <h3>عنصر النموذج: &lt;form&gt;&lt;/form&gt;</h3>
+                    <p>تجمع النماذج مدخلات المستخدم وترسلها إلى الخادم:</p>
+                    
+                    <h3>سمات النموذج:</h3>
+                    <ul>
+                        <li><strong>action</strong>: عنوان URL حيث يتم إرسال بيانات النموذج</li>
+                        <li><strong>method</strong>: طريقة HTTP (GET, POST)</li>
+                        <li><strong>novalidate</strong>: يعطل التحقق من المتصفح</li>
+                        <li><strong>target</strong>: مكان عرض الاستجابة (_blank, _self)</li>
+                        <li><strong>autocomplete</strong>: تمكين/تعطيل الإكمال التلقائي</li>
+                    </ul>
+                    
+                    <h3>عناصر تحكم النموذج:</h3>
+                    <ul>
+                        <li><strong>&lt;input&gt;</strong>: أنواع إدخال متنوعة (نص، بريد إلكتروني، كلمة مرور، إلخ)</li>
+                        <li><strong>&lt;textarea&gt;</strong>: إدخال نص متعدد الأسطر</li>
+                        <li><strong>&lt;select&gt;</strong>: قائمة منسدلة</li>
+                        <li><strong>&lt;button&gt;</strong>: زر قابل للنقر</li>
+                        <li><strong>&lt;label&gt;</strong>: تسمية لعناصر تحكم النموذج</li>
+                    </ul>
+                    
+                    <h3>سمات الإدخال:</h3>
+                    <ul>
+                        <li><strong>type</strong>: يحدد نوع الإدخال (نص، بريد إلكتروني، رقم، إلخ)</li>
+                        <li><strong>placeholder</strong>: نص تلميحي</li>
+                        <li><strong>name</strong>: اسم لبيانات النموذج</li>
+                        <li><strong>value</strong>: القيمة الافتراضية</li>
+                        <li><strong>required</strong>: يجعل الحقل إلزامياً</li>
+                        <li><strong>readonly</strong>: حقل للقراءة فقط</li>
+                        <li><strong>autofocus</strong>: التركيز التلقائي عند تحميل الصفحة</li>
+                        <li><strong>pattern</strong>: نمط تحقق بتعبير منتظم</li>
+                    </ul>
+                    
+                    <h3>ميزات النموذج المتقدمة:</h3>
+                    <ul>
+                        <li><strong>&lt;datalist&gt;</strong>: خيارات محددة مسبقاً للإدخال</li>
+                        <li><strong>&lt;fieldset&gt;</strong>: يجمع عناصر التحكم ذات الصلة</li>
+                        <li><strong>&lt;legend&gt;</strong>: تسمية لمجموعة الحقول</li>
+                        <li><strong>&lt;optgroup&gt;</strong>: يجمع الخيارات في القائمة المنسدلة</li>
+                    </ul>
+                </div>
             `,
             examples: [
                 {
@@ -171,6 +215,46 @@ const courseData = {
                     <li><strong>&amp;infin;</strong> = ∞ (infinity)</li>
                     <li><strong>&amp;radic;</strong> = √ (square root)</li>
                 </ul>
+
+                <br><hr><br>
+                <div dir="rtl">
+                    <h3>ما هي كيانات HTML؟</h3>
+                    <p>كيانات HTML هي رموز تستخدم لعرض الأحرف المحجوزة أو الرموز الخاصة:</p>
+                    
+                    <h3>لماذا تستخدم الكيانات؟</h3>
+                    <ul>
+                        <li>عرض الأحرف التي لها معنى خاص في HTML</li>
+                        <li>عرض الرموز غير المتوفرة على لوحة المفاتيح</li>
+                        <li>ضمان العرض الصحيح عبر المتصفحات المختلفة</li>
+                        <li>منع مشاكل تفسير الكود</li>
+                    </ul>
+                    
+                    <h3>كيانات HTML الشائعة:</h3>
+                    <ul>
+                        <li><strong>&amp;lt;</strong> = &lt; (أقل من)</li>
+                        <li><strong>&amp;gt;</strong> = &gt; (أكبر من)</li>
+                        <li><strong>&amp;amp;</strong> = &amp; (علامة و)</li>
+                        <li><strong>&amp;quot;</strong> = " (علامة اقتباس)</li>
+                        <li><strong>&amp;copy;</strong> = © (حقوق النشر)</li>
+                        <li><strong>&amp;nbsp;</strong> = مسافة غير قابلة للكسر</li>
+                        <li><strong>&amp;euro;</strong> = € (عملة اليورو)</li>
+                    </ul>
+                    
+                    <h3>مراجع الأحرف الرقمية:</h3>
+                    <ul>
+                        <li><strong>&amp;#169;</strong> = © (عشري)</li>
+                        <li><strong>&amp;#xA9;</strong> = © (سداسي عشري)</li>
+                        <li><strong>&amp;#128;</strong> = € (يورو)</li>
+                    </ul>
+                    
+                    <h3>الرموز الرياضية:</h3>
+                    <ul>
+                        <li><strong>&amp;pi;</strong> = π (باي)</li>
+                        <li><strong>&amp;sum;</strong> = ∑ (جمع)</li>
+                        <li><strong>&amp;infin;</strong> = ∞ (اللانهاية)</li>
+                        <li><strong>&amp;radic;</strong> = √ (الجذر التربيعي)</li>
+                    </ul>
+                </div>
             `,
             examples: [
                 {
@@ -280,6 +364,44 @@ const courseData = {
                     <li><strong>&lt;abbr&gt;</strong>: Abbreviation or acronym</li>
                     <li><strong>&lt;ruby&gt;</strong>: Ruby annotations (for East Asian typography)</li>
                 </ul>
+
+                <br><hr><br>
+                <div dir="rtl">
+                    <h3>قائمة العناصر الدلالية الكاملة</h3>
+                    <p>أدخلت HTML5 عناصر دلالية تصف معناها بوضوح:</p>
+                    
+                    <h3>هيكل المستند:</h3>
+                    <ul>
+                        <li><strong>&lt;header&gt;</strong>: محتوى تمهيدي أو تنقل</li>
+                        <li><strong>&lt;nav&gt;</strong>: روابط التنقل</li>
+                        <li><strong>&lt;main&gt;</strong>: المحتوى الرئيسي للمستند</li>
+                        <li><strong>&lt;article&gt;</strong>: تركيب مستقل بذاته</li>
+                        <li><strong>&lt;section&gt;</strong>: تجميع موضوعي للمحتوى</li>
+                        <li><strong>&lt;aside&gt;</strong>: شريط جانبي أو محتوى تكميلي</li>
+                        <li><strong>&lt;footer&gt;</strong>: تذييل لأقرب قسم</li>
+                    </ul>
+                    
+                    <h3>الدلالات المحتوى:</h3>
+                    <ul>
+                        <li><strong>&lt;figure&gt;</strong>: محتوى مستقل مع تسمية توضيحية</li>
+                        <li><strong>&lt;figcaption&gt;</strong>: تسمية توضيحية للشكل</li>
+                        <li><strong>&lt;mark&gt;</strong>: نص مميز</li>
+                        <li><strong>&lt;time&gt;</strong>: تاريخ/وقت قابل للقراءة الآلية</li>
+                        <li><strong>&lt;details&gt;</strong>: عنصر تفاصيل قابل للكشف</li>
+                        <li><strong>&lt;summary&gt;</strong>: ملخص لعنصر التفاصيل</li>
+                        <li><strong>&lt;progress&gt;</strong>: مؤشر التقدم</li>
+                        <li><strong>&lt;meter&gt;</strong>: قياس عددي</li>
+                    </ul>
+                    
+                    <h3>دلالات مستوى النص:</h3>
+                    <ul>
+                        <li><strong>&lt;data&gt;</strong>: مكافئ قابل للقراءة الآلية</li>
+                        <li><strong>&lt;cite&gt;</strong>: عنوان عمل</li>
+                        <li><strong>&lt;dfn&gt;</strong>: مثيل تعريف للمصطلح</li>
+                        <li><strong>&lt;abbr&gt;</strong>: اختصار أو acronym</li>
+                        <li><strong>&lt;ruby&gt;</strong>: تعليقات روبي (لطباعة شرق آسيا)</li>
+                    </ul>
+                </div>
             `,
             examples: [
                 {
@@ -418,6 +540,48 @@ const courseData = {
                     <li>Use <strong>&lt;main&gt;</strong>, <strong>&lt;header&gt;</strong>, <strong>&lt;footer&gt;</strong></li>
                     <li>Proper form structure with <strong>&lt;label&gt;</strong> elements</li>
                 </ul>
+
+                <br><hr><br>
+                <div dir="rtl">
+                    <h3>إمكانية الوصول إلى الويب (a11y)</h3>
+                    <p>تضمن إمكانية الوصول أن المواقع الإلكترونية يمكن استخدامها من قبل الأشخاص ذوي الإعاقات:</p>
+                    
+                    <h3>مبادئ إمكانية الوصول الرئيسية:</h3>
+                    <ul>
+                        <li><strong>يمكن إدراكه</strong>: متاح للحواس (البصر، السمع، اللمس)</li>
+                        <li><strong>قابل للتشغيل</strong>: يمكن استخدامه بطرق إدخال متنوعة</li>
+                        <li><strong>يمكن فهمه</strong>: واضح ومتوقع</li>
+                        <li><strong>قوي</strong>: يعمل مع الأدوات الحالية والمستقبلية</li>
+                    </ul>
+                    
+                    <h3>ميزات إمكانية الوصول الأساسية في HTML:</h3>
+                    <ul>
+                        <li><strong>نص بديل للصور</strong>: نص وصفي لقارئات الشاشة</li>
+                        <li><strong>هيكل عناوين صحيح</strong>: تسلسل هرمي منطقي (h1-h6)</li>
+                        <li><strong>تسميات النماذج</strong>: ربط التسميات بعناصر تحكم النموذج</li>
+                        <li><strong>سمات ARIA</strong>: تعزيز إمكانية الوصول عندما لا تكفي HTML</li>
+                        <li><strong>التنقل بلوحة المفاتيح</strong>: جميع الوظائف متاحة عبر لوحة المفاتيح</li>
+                        <li><strong>تباين الألوان</strong>: تباين كافٍ لسهولة القراءة</li>
+                    </ul>
+                    
+                    <h3>ARIA (تطبيقات الإنترنت الغنية القابلة للوصول):</h3>
+                    <ul>
+                        <li><strong>aria-label</strong>: يوفر تسمية غير مرئية</li>
+                        <li><strong>aria-describedby</strong>: يشير إلى نص وصفي</li>
+                        <li><strong>aria-hidden</strong>: يخفي من قارئات الشاشة</li>
+                        <li><strong>role</strong>: يحدد غرض العنصر</li>
+                        <li><strong>aria-live</strong>: يعلن عن تغييرات المحتوى الديناميكي</li>
+                    </ul>
+                    
+                    <h3>HTML الدلالي لإمكانية الوصول:</h3>
+                    <p>استخدام العناصر الدلالية الصحيحة هو أساس إمكانية الوصول:</p>
+                    <ul>
+                        <li>استخدم <strong>&lt;button&gt;</strong> للأزرار، ليس <strong>&lt;div&gt;</strong></li>
+                        <li>استخدم <strong>&lt;nav&gt;</strong> للتنقل، ليس <strong>&lt;div&gt;</strong></li>
+                        <li>استخدم <strong>&lt;main&gt;</strong>, <strong>&lt;header&gt;</strong>, <strong>&lt;footer&gt;</strong></li>
+                        <li>هيكل نموذج صحيح مع عناصر <strong>&lt;label&gt;</strong></li>
+                    </ul>
+                </div>
             `,
             examples: [
                 {

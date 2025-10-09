@@ -47,20 +47,20 @@ const lectures = [
     {
         id: "css-2",
         number: 6,
-        title: "Icons, Box Model, Backgrounds, Borders",
-        description: "Google Fonts Integration, Working with Icons, CSS Box Model - Complete Layout Foundation, Backgrounds, Borders",
+        title: "Icons, Box Model, Borders",
+        description: "Google Fonts Integration, Working with Icons, CSS Box Model - Complete Layout Foundation, Borders",
         image: "./assets/images/logos/CSS.webp",
-        status: "not-started",
+        status: "completed",
         content: "CSS"
     },
     {
-        id: "css-positioning-floats",
+        id: "css-3",
         number: 7,
-        title: "CSS Positioning Schemes and Floats",
-        description: "Position values (static, relative, absolute, fixed, sticky), top/right/bottom/left offsets, z-index stacking, float/clear properties, and when to avoid floats in modern layouts",
+        title: "Backgrounds, Display & Positioning",
+        description: "Backgrounds, Display, Position values (static, relative, absolute, fixed, sticky), top/right/bottom/left offsets, z-index stacking, float/clear properties, and when to avoid floats in modern layouts",
         image: "./assets/images/logos/CSS.webp",
         status: "not-started",
-        content: "Full content for CSS positioning..."
+        content: "CSS"
     },
     {
         id: "css-flexbox-basics",

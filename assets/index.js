@@ -59,17 +59,17 @@ const lectures = [
         title: "Backgrounds, Display & Positioning",
         description: "Backgrounds, Display, Position values (static, relative, absolute, fixed, sticky), top/right/bottom/left offsets, z-index stacking, float/clear properties, and when to avoid floats in modern layouts",
         image: "./assets/images/logos/CSS.webp",
-        status: "not-started",
+        status: "completed",
         content: "CSS"
     },
     {
-        id: "css-flexbox-basics",
+        id: "css-4",
         number: 8,
-        title: "CSS Flexbox: Container Properties and Layout Axis",
-        description: "Flexbox overview, display: flex, main/cross axis, flex-direction (row/column), justify-content (flex-start, center, space-between), align-items (stretch, center, baseline), and flex-wrap",
+        title: "CSS Flexbox & CSS Grid",
+        description: "Flexbox overview, display: flex, main/cross axis, flex-direction (row/column), justify-content (flex-start, center, space-between), align-items (stretch, center, baseline), and flex-wrap, Display: grid, grid-template-columns/rows (fixed, fr, auto), grid-gap (row/column), justify-items/align-items, and grid-auto-flow",
         image: "./assets/images/logos/CSS.webp",
-        status: "not-started",
-        content: "Full content for Flexbox basics..."
+        status: "in-progress",
+        content: "CSS"
     },
     {
         id: "css-flexbox-advanced",

@@ -68,35 +68,35 @@ const lectures = [
         title: "CSS Flexbox & CSS Grid",
         description: "Flexbox overview, display: flex, main/cross axis, flex-direction (row/column), justify-content (flex-start, center, space-between), align-items (stretch, center, baseline), and flex-wrap, Display: grid, grid-template-columns/rows (fixed, fr, auto), grid-gap (row/column), justify-items/align-items, and grid-auto-flow",
         image: "./assets/images/logos/CSS.webp",
+        status: "completed",
+        content: "CSS"
+    },
+    {
+        id: "css-5",
+        number: 9,
+        title: "CSS Units, Pseudo-elements, Transitions",
+        description: "CSS Units & Measurements - Complete Guide, Small but Powerful CSS Properties, Pseudo-elements & Pseudo-classes - Advanced Selectors, CSS Transitions - Smooth Animations",
+        image: "./assets/images/logos/CSS.webp",
         status: "in-progress",
         content: "CSS"
     },
     {
-        id: "css-flexbox-advanced",
-        number: 9,
-        title: "CSS Flexbox: Item Properties and Complex Layouts",
-        description: "Flex items: flex-grow, flex-shrink, flex-basis, align-self, order; building responsive navbars, card grids, and centering techniques with real-world examples",
-        image: "./assets/images/logos/CSS.webp",
-        status: "not-started",
-        content: "Full content for advanced Flexbox..."
-    },
-    {
-        id: "css-grid-basics",
+        id: "css-6",
         number: 10,
-        title: "CSS Grid: Container Setup and Template Definition",
-        description: "Display: grid, grid-template-columns/rows (fixed, fr, auto), grid-gap (row/column), justify-items/align-items, and grid-auto-flow",
+        title: "CSS Transforms, Responsive Design & Animations",
+        description: "CSS Transforms - 2D & 3D Transformations, Width, Height & Responsive Properties, Responsive Design & Animations",
         image: "./assets/images/logos/CSS.webp",
         status: "not-started",
-        content: "Full content for Grid basics..."
+        content: "CSS"
     },
     {
-        id: "css-responsive-animations",
+        id: "css-7",
         number: 11,
-        title: "Responsive Design, Media Queries, and CSS Animations",
-        description: "Media queries (@media, logical operators), breakpoints, viewport meta, clamp() for fluid sizing; transitions (property, duration, timing-function), @keyframes animations, and transforms (scale, rotate, translate)",
+        title: "Examples & Advanced Level",
+        description: "Centering Elements - Complete Guide, Image Styling & Manipulation, Card Components - Modern Design Patterns, Hero Sections - Landing Page Masters, Navigation Systems - From Simple to Complex, Footer Design - Complete Website Closure, Form Styling - User-Friendly Inputs, CSS Methodologies & Architecture, CSS Performance Optimization, Cross-Browser Compatibility & Vendor Prefixes, Accessibility (A11y) Deep Dive",
         image: "./assets/images/logos/CSS.webp",
         status: "not-started",
-        content: "Full content for responsive CSS and animations..."
+        content: "CSS"
     },
     {
         id: "tailwind",

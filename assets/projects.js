@@ -4,6 +4,11 @@ const lectures = [
         title: "Travel Scape",
         link: "/projects/TravelScape",
     },
+    {
+        id: "1",
+        title: "Style Shop",
+        link: "/projects/StyleShop",
+    },
 ];
 
 // DOM Elements

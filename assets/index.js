@@ -74,19 +74,19 @@ const lectures = [
     {
         id: "css-5",
         number: 9,
-        title: "CSS Units, Pseudo-elements, Transitions",
-        description: "CSS Units & Measurements - Complete Guide, Small but Powerful CSS Properties, Pseudo-elements & Pseudo-classes - Advanced Selectors, CSS Transitions - Smooth Animations",
+        title: "CSS Units, Small CSS Properties",
+        description: "CSS Units & Measurements - Complete Guide, Small but Powerful CSS Properties",
         image: "./assets/images/logos/CSS.webp",
-        status: "in-progress",
+        status: "completed",
         content: "CSS"
     },
     {
         id: "css-6",
         number: 10,
-        title: "CSS Transforms, Responsive Design & Animations",
-        description: "CSS Transforms - 2D & 3D Transformations, Width, Height & Responsive Properties, Responsive Design & Animations",
+        title: "Pseudo-elements, CSS Transitions, CSS Transforms, Responsive Design & Animations",
+        description: "Pseudo-elements & Pseudo-classes - Advanced Selectors, CSS Transitions - Smooth Animations, CSS Transforms - 2D & 3D Transformations, Width, Height & Responsive Properties, Responsive Design & Animations",
         image: "./assets/images/logos/CSS.webp",
-        status: "not-started",
+        status: "in-progress",
         content: "CSS"
     },
     {

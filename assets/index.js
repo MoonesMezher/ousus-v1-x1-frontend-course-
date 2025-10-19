@@ -83,19 +83,19 @@ const lectures = [
     {
         id: "css-6",
         number: 10,
-        title: "Pseudo-elements, CSS Transitions, CSS Transforms, Responsive Design & Animations",
-        description: "Pseudo-elements & Pseudo-classes - Advanced Selectors, CSS Transitions - Smooth Animations, CSS Transforms - 2D & 3D Transformations, Width, Height & Responsive Properties, Responsive Design & Animations",
+        title: "Pseudo-elements, CSS Transitions, CSS Transforms",
+        description: "Pseudo-elements & Pseudo-classes - Advanced Selectors, CSS Transitions - Smooth Animations, CSS Transforms - 2D & 3D Transformations",
         image: "./assets/images/logos/CSS.webp",
-        status: "in-progress",
+        status: "completed",
         content: "CSS"
     },
     {
         id: "css-7",
         number: 11,
-        title: "Examples & Advanced Level",
-        description: "Centering Elements - Complete Guide, Image Styling & Manipulation, Card Components - Modern Design Patterns, Hero Sections - Landing Page Masters, Navigation Systems - From Simple to Complex, Footer Design - Complete Website Closure, Form Styling - User-Friendly Inputs, CSS Methodologies & Architecture, CSS Performance Optimization, Cross-Browser Compatibility & Vendor Prefixes, Accessibility (A11y) Deep Dive",
+        title: "Responsive Design & Animations & Examples & Advanced Level",
+        description: "Width, Height & Responsive Properties, Responsive Design & Animations, Centering Elements - Complete Guide, Image Styling & Manipulation, Card Components - Modern Design Patterns, Hero Sections - Landing Page Masters, Navigation Systems - From Simple to Complex, Footer Design - Complete Website Closure, Form Styling - User-Friendly Inputs, CSS Methodologies & Architecture, CSS Performance Optimization, Cross-Browser Compatibility & Vendor Prefixes, Accessibility (A11y) Deep Dive",
         image: "./assets/images/logos/CSS.webp",
-        status: "not-started",
+        status: "in-progress",
         content: "CSS"
     },
     {

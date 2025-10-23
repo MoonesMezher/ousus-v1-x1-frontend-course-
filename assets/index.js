@@ -104,7 +104,7 @@ const lectures = [
         title: "Guides & Advanced Level",
         description: "Centering Elements - Complete Guide, Image Styling & Manipulation, Card Components - Modern Design Patterns, Hero Sections - Landing Page Masters, Navigation Systems - From Simple to Complex, Footer Design - Complete Website Closure, Form Styling - User-Friendly Inputs, CSS Methodologies & Architecture, CSS Performance Optimization, Cross-Browser Compatibility & Vendor Prefixes, Accessibility (A11y) Deep Dive",
         image: "./assets/images/logos/CSS.webp",
-        status: "in-progress",
+        status: "completed",
         content: "CSS"
     },
     {
@@ -113,8 +113,8 @@ const lectures = [
         title: "Tailwind CSS: Classes, Flexbox, Grid, and Responsive Design",
         description: "Tailwind classes for flex (flex, justify, items), grid (grid-cols, gap), responsive prefixes (sm:, md:, lg:), and building mobile-first components with hover/focus states",
         image: "./assets/images/logos/tailwind-css.webp",
-        status: "not-started",
-        content: "Full content for Tailwind layouts..."
+        status: "in-progress",
+        content: "Tailwind"
     },
     {
         id: "js-syntax-variables",

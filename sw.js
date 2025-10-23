@@ -1,25 +1,13 @@
-const SITE_STATIC_CACHE_NAME = "pwa-cache";
-
-const lectures = () => {
-    const lecturesCount = 13;
-    const output = []
-
-    for (let index = 1; index <= lecturesCount; index++) {
-        output.push(`/lecture${index}.html`);
-        output.push(`/assets/lecture${index}.js`);
-    }
-
-    return output;
-}
+const SITE_STATIC_CACHE_NAME = "pwa-cache-v1";
+const SITE_DYNAMIC_CACHE_NAME = "pwa-cache-dynamic";
 
 const assets = [
     "/",
     "/index.html",
     "/assets/index.css",
-    "/assets/index.css",
+    "/assets/index.js",
     "/assets/lecture.css",
     "/logo.jpg",
-    ...lectures,
     "/assets/images/logos/CSS.webp",
     "/assets/images/logos/github.webp",
     "/assets/images/logos/hosting.webp",
@@ -60,7 +48,13 @@ self.addEventListener("activate", event => {
 self.addEventListener("fetch", event => {
     event.respondWith(
         caches.match(event.request).then(response => {
-            return response || fetch(event.request);
+            return response || fetch(event.request).then(async res => {
+                return caches.open(SITE_DYNAMIC_CACHE_NAME).then(cache => {
+                    cache.put(event.request.url, res.clone());
+
+                    return res;
+                })
+            });
         })
     );
     /* console.log("service worker has been fetched", event); */

@@ -113,7 +113,7 @@ const lectures = [
         title: "Tailwind CSS: Classes, Flexbox, Grid, and Responsive Design",
         description: "Tailwind classes for flex (flex, justify, items), grid (grid-cols, gap), responsive prefixes (sm:, md:, lg:), and building mobile-first components with hover/focus states",
         image: "./assets/images/logos/tailwind-css.webp",
-        status: "in-progress",
+        status: "completed",
         content: "Tailwind"
     },
     {

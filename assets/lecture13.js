@@ -31,8 +31,12 @@ const courseData = {
         </ul>
         
         <h3>Basic Setup:</h3>
-        <p>Install via npm: <code>npm install -D tailwindcss</code></p>
-        <p>Initialize config: <code>npx tailwindcss init</code></p>
+        <p>1- Intsall 'nodejs' on your computer: <strong>https://nodejs.org/en/download/</strong></p>
+        <p>2- in your terminal => Install via npm: <strong>npm install tailwindcss @tailwindcss/cli</strong></p>
+        <p>3- Add the @import "tailwindcss"; import to your main CSS file.: <strong>@import "tailwindcss";</strong></p>
+        <p>4- Create <strong>src</strong> folder in your project them create inside it <strong>input.css</strong> file</p>
+        <p>5- Run: <strong>npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch</strong></p>
+        <p>Finish!</p>
 
         <br><hr><br>
         <div dir="rtl">
@@ -55,55 +59,34 @@ const courseData = {
                 <li>PostCSS (متقدم)</li>
                 <li>CLI (منفرد)</li>
             </ul>
-            
-            <h3>الإعداد الأساسي:</h3>
-            <p>التثبيت عبر npm: <code>npm install -D tailwindcss</code></p>
-            <p>تهيئة الإعدادات: <code>npx tailwindcss init</code></p>
         </div>
     `,
     examples: [
         {
             title: "Tailwind Config Setup",
             content: `
-                <h4>Configuration File (tailwind.config.js)</h4>
+                <h4>Configuration</h4>
+If you want to change things like your color palette, spacing scale, typography scale, or breakpoints, add your customizations using the @theme directive in your CSS:
                 <pre class="code-block">
-// tailwind.config.js
-module.exports = {
-  content: [
-    "./src/**/*.{html,js,ts,jsx,tsx}",
-    "./public/**/*.html"
-  ],
-  theme: {
-    extend: {
-      colors: {
-        primary: {
-          50: '#f0f9ff',
-          100: '#e0f2fe',
-          200: '#bae6fd',
-          300: '#7dd3fc',
-          400: '#38bdf8',
-          500: '#0ea5e9',
-          600: '#0284c7',
-          700: '#0369a1',
-          800: '#075985',
-          900: '#0c4a6e',
-        }
-      },
-      fontFamily: {
-        'custom': ['Inter', 'system-ui', 'sans-serif'],
-      }
-    },
-  },
-  plugins: [],
+@theme {
+  --font-display: "Satoshi", "sans-serif";
+  --breakpoint-3xl: 120rem;
+  --color-avocado-100: oklch(0.99 0 0);
+  --color-avocado-200: oklch(0.98 0.04 113.22);
+  --color-avocado-300: oklch(0.94 0.11 115.03);
+  --color-avocado-400: oklch(0.92 0.19 114.08);
+  --color-avocado-500: oklch(0.84 0.18 117.33);
+  --color-avocado-600: oklch(0.53 0.12 118.34);
+  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+  /* ... */
 }
                 </pre>
 
                 <h4>CSS File Setup</h4>
                 <pre class="code-block">
 /* Add to your main CSS file */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* Custom components using @apply */
 .btn {
@@ -694,6 +677,252 @@ module.exports = {
         }
     ]
 },
+{
+    id: "tailwind-arbitrary-values",
+    title: "Arbitrary Values & Custom Utilities",
+    content: `
+        <h3>Arbitrary Values in Tailwind:</h3>
+        <p>Use square brackets to create custom values on the fly when Tailwind doesn't have a predefined class.</p>
+        
+        <h3>Common Use Cases:</h3>
+        <ul>
+            <li><strong>Custom Sizing</strong>: w-[200px], h-[calc(100vh-50px)]</li>
+            <li><strong>Custom Colors</strong>: bg-[#1a1a1a], text-[rgb(255,0,0)]</li>
+            <li><strong>Custom Spacing</strong>: p-[12px], m-[3rem]</li>
+            <li><strong>Custom Grid</strong>: grid-cols-[1fr,2fr,1fr]</li>
+            <li><strong>Custom Transforms</strong>: rotate-[25deg], scale-[1.1]</li>
+            <li><strong>Custom Shadows</strong>: shadow-[0_0_15px_rgba(0,0,0,0.3)]</li>
+        </ul>
+        
+        <h3>Arbitrary Properties:</h3>
+        <p>When you need a CSS property that Tailwind doesn't support out of the box.</p>
+        <ul>
+            <li><code>[property:value]</code> syntax</li>
+            <li>Use for CSS custom properties</li>
+            <li>Support for vendor prefixes</li>
+        </ul>
+        
+        <h3>Best Practices:</h3>
+        <ul>
+            <li>Use for one-off values only</li>
+            <li>Extract repeated values to config</li>
+            <li>Consider performance implications</li>
+            <li>Use with responsive and state variants</li>
+        </ul>
+
+        <br><hr><br>
+        <div dir="rtl">
+            <h3>القيم المخصصة في Tailwind:</h3>
+            <p>استخدم الأقواس المربعة لإنشاء قيم مخصصة على الفور عندما لا يكون لدى Tailwind فئة محددة مسبقاً.</p>
+            
+            <h3>حالات الاستخدام الشائعة:</h3>
+            <ul>
+                <li><strong>الأحجام المخصصة</strong>: w-[200px], h-[calc(100vh-50px)]</li>
+                <li><strong>الألوان المخصصة</strong>: bg-[#1a1a1a], text-[rgb(255,0,0)]</li>
+                <li><strong>المسافات المخصصة</strong>: p-[12px], m-[3rem]</li>
+                <li><strong>الشبكات المخصصة</strong>: grid-cols-[1fr,2fr,1fr]</li>
+                <li><strong>التحويلات المخصصة</strong>: rotate-[25deg], scale-[1.1]</li>
+                <li><strong>الظلال المخصصة</strong>: shadow-[0_0_15px_rgba(0,0,0,0.3)]</li>
+            </ul>
+            
+            <h3>الخصائص المخصصة:</h3>
+            <p>عندما تحتاج إلى خاصية CSS لا يدعمها Tailwind افتراضياً.</p>
+            <ul>
+                <li>صيغة <code>[property:value]</code></li>
+                <li>استخدم لخصائص CSS المخصصة</li>
+                <li>دعم للبادئات الخاصة بالبائعين</li>
+            </ul>
+            
+            <h3>أفضل الممارسات:</h3>
+            <ul>
+                <li>استخدم للقيم الفردية فقط</li>
+                <li>استخرج القيم المتكررة إلى الإعدادات</li>
+                <li>ضع في الاعتبار تأثيرات الأداء</li>
+                <li>استخدم مع متغيرات الاستجابة والحالة</li>
+            </ul>
+        </div>
+    `,
+    examples: [
+        {
+            title: "Arbitrary Values Examples",
+            content: `
+                <h4>Custom Sizing and Colors</h4>
+                <pre class="code-block">
+&lt;!-- Custom width and height --&gt;
+&lt;div class="w-[200px] h-[150px] bg-blue-500"&gt;
+  Fixed custom size
+&lt;/div&gt;
+
+&lt;!-- Complex calculations --&gt;
+&lt;div class="h-[calc(100vh-80px)] w-[50%] bg-gray-100"&gt;
+  Calculated height
+&lt;/div&gt;
+
+&lt;!-- Custom colors --&gt;
+&lt;div class="bg-[#1a1a1a] text-[rgb(255,255,255)] p-4"&gt;
+  Custom color values
+&lt;/div&gt;
+
+&lt;!-- Brand colors --&gt;
+&lt;button class="bg-[#ff6b35] hover:bg-[#e55a2b] text-white px-4 py-2 rounded"&gt;
+  Brand button
+&lt;/button&gt;
+
+&lt;!-- Custom spacing --&gt;
+&lt;div class="p-[15px] m-[2rem] border-2 border-[#333]"&gt;
+  Custom padding and margin
+&lt;/div&gt;
+                </pre>
+
+                <h4>Custom Grid and Transforms</h4>
+                <pre class="code-block">
+&lt;!-- Custom grid templates --&gt;
+&lt;div class="grid grid-cols-[200px_1fr_300px] gap-4"&gt;
+  &lt;div&gt;Sidebar&lt;/div&gt;
+  &lt;div&gt;Main content&lt;/div&gt;
+  &lt;div&gt;Sidebar&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Complex grid --&gt;
+&lt;div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-4"&gt;
+  &lt;div class="bg-white p-4"&gt;Item 1&lt;/div&gt;
+  &lt;div class="bg-white p-4"&gt;Item 2&lt;/div&gt;
+  &lt;div class="bg-white p-4"&gt;Item 3&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Custom transforms --&gt;
+&lt;div class="transform rotate-[15deg] scale-[1.05] hover:rotate-[0deg] transition-transform"&gt;
+  Custom rotation
+&lt;/div&gt;
+
+&lt;!-- Custom shadows and effects --&gt;
+&lt;div class="shadow-[0_10px_30px_rgba(0,0,0,0.3)] backdrop-blur-[2px]"&gt;
+  Custom shadow and blur
+&lt;/div&gt;
+                </pre>
+
+                <h4>Arbitrary Properties</h4>
+                <pre class="code-block">
+&lt;!-- CSS custom properties --&gt;
+&lt;div class="[--custom-width:250px] [--primary-color:#3b82f6]"&gt;
+  &lt;div class="w-[var(--custom-width)] bg-[var(--primary-color)] text-white p-4"&gt;
+    Using CSS variables
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Unsupported properties --&gt;
+&lt;div class="[clip-path:polygon(0_0,100%_0,100%_80%,0_100%)] bg-gray-200 p-8"&gt;
+  Custom clip path
+&lt;/div&gt;
+
+&lt;!-- Vendor prefixes --&gt;
+&lt;div class="[-webkit-line-clamp:3] [display:-webkit-box] [-webkit-box-orient:vertical] overflow-hidden"&gt;
+  This text will be clamped to three lines with ellipsis in WebKit browsers
+&lt;/div&gt;
+
+&lt;!-- Complex animations --&gt;
+&lt;div class="[animation:custom-bounce_1s_ease-in-out_infinite]"&gt;
+  Custom animation
+&lt;/div&gt;
+                </pre>
+            `
+        },
+        {
+            title: "Responsive and State Variants with Arbitrary Values",
+            content: `
+                <h4>Responsive Arbitrary Values</h4>
+                <pre class="code-block">
+&lt;!-- Responsive custom values --&gt;
+&lt;div class="w-full md:w-[400px] lg:w-[600px] xl:w-[800px]"&gt;
+  Responsive custom widths
+&lt;/div&gt;
+
+&lt;!-- Responsive grid --&gt;
+&lt;div class="grid grid-cols-1 md:grid-cols-[2fr_1fr] lg:grid-cols-[300px_1fr_200px] gap-4"&gt;
+  &lt;div&gt;Content&lt;/div&gt;
+  &lt;div&gt;Sidebar&lt;/div&gt;
+  &lt;div&gt;Navigation&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Responsive custom spacing --&gt;
+&lt;div class="p-4 md:p-[30px] lg:p-[50px]"&gt;
+  Responsive custom padding
+&lt;/div&gt;
+
+&lt;!-- Responsive text sizes --&gt;
+&lt;h1 class="text-[24px] md:text-[32px] lg:text-[48px] font-bold"&gt;
+  Responsive custom text
+&lt;/h1&gt;
+                </pre>
+
+                <h4>State Variants with Arbitrary Values</h4>
+                <pre class="code-block">
+&lt;!-- Hover states --&gt;
+&lt;button class="bg-blue-500 text-white px-4 py-2 rounded 
+               hover:bg-[#1e40af] hover:scale-[1.05] transition-all"&gt;
+  Hover effects
+&lt;/button&gt;
+
+&lt;!-- Focus states --&gt;
+&lt;input class="border p-2 focus:border-[#3b82f6] focus:ring-[2px] 
+              focus:ring-[#3b82f6] focus:outline-none transition-all" 
+       placeholder="Focus me"&gt;
+
+&lt;!-- Group hover with arbitrary values --&gt;
+&lt;div class="group border rounded-lg p-4"&gt;
+  &lt;h3 class="text-lg group-hover:text-[#dc2626] transition-colors"&gt;
+    Group title
+  &lt;/h3&gt;
+  &lt;p class="text-gray-600 group-hover:text-[#1f2937] transition-colors"&gt;
+    Group content
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;!-- Dark mode support --&gt;
+&lt;div class="bg-white dark:bg-[#1a1a1a] text-[#333] dark:text-[#fff] p-4"&gt;
+  Dark mode with custom colors
+&lt;/div&gt;
+
+&lt;!-- Custom active states --&gt;
+&lt;button class="bg-green-500 text-white px-4 py-2 rounded 
+               active:bg-[#059669] active:scale-[0.95] transition-transform"&gt;
+  Click me
+&lt;/button&gt;
+                </pre>
+            `
+        }
+    ],
+    practices: [
+        {
+            title: "Arbitrary Values Practice",
+            content: `
+                <p>Practice using arbitrary values and custom utilities:</p>
+                <ol>
+                    <li>Create components with custom color values using square brackets</li>
+                    <li>Build layouts with custom grid templates and calculations</li>
+                    <li>Implement custom shadows and backdrop effects</li>
+                    <li>Use arbitrary values with responsive breakpoints</li>
+                    <li>Create hover and focus states with custom values</li>
+                    <li>Implement CSS custom properties with arbitrary values</li>
+                    <li>Build components with vendor-prefixed properties</li>
+                    <li>Create custom animations using arbitrary values</li>
+                    <li>Practice using calc() and other CSS functions</li>
+                    <li>Combine arbitrary values with Tailwind's state variants</li>
+                </ol>
+            `
+        }
+    ],
+    questions: [
+        {
+            question: "When should you use arbitrary values vs extending Tailwind config?",
+            answer: "Use arbitrary values for one-off, unique values that won't be reused across your project. Extend the Tailwind config when you have design tokens, brand colors, or spacing values that will be used consistently throughout your application. Arbitrary values are great for prototyping and quick fixes, while config extensions are better for maintaining design consistency."
+        },
+        {
+            question: "What are the performance implications of arbitrary values?",
+            answer: "Arbitrary values generate CSS on-demand, which can increase your CSS bundle size if overused. Each unique arbitrary value creates a new CSS rule. For best performance, use arbitrary values sparingly and prefer extending your Tailwind config for values that are reused. The built-in PurgeCSS will remove unused arbitrary values in production."
+        }
+    ]
+}
     ]
 };
 

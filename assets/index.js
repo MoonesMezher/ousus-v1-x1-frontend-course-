@@ -117,17 +117,37 @@ const lectures = [
         content: "Tailwind"
     },
     {
-        id: "js-syntax-variables",
+        id: "Project-1",
         number: 14,
+        title: "Next Project - Part 1",
+        description: "Project Setup, Header, Hero Section, Services Section, Courses Section",
+        image: "./assets/images/logos/Project.webp",
+        status: "completed",
+        hidden: true,
+        content: "HTML, CSS, Tailwind"
+    },
+    {
+        id: "Project-2",
+        number: 15,
+        title: "Next Project - Part 2",
+        description: "About Us Section, Contact Us Section, Footer",
+        image: "./assets/images/logos/Project.webp",
+        status: "in-progress",
+        hidden: true,
+        content: "HTML, CSS, Tailwind"
+    },
+    {
+        id: "JS-1",
+        number: 16,
         title: "JavaScript Syntax: Variables, Data Types, and Operators",
         description: "Declaring variables (var, let, const), primitive types (string, number, boolean, null, undefined, symbol, bigint), objects/arrays literals, type coercion, and operators (arithmetic, assignment, comparison, logical, ternary)",
         image: "./assets/images/logos/JS.webp",
-        status: "not-started",
-        content: "Full content for JS variables and types..."
+        status: "in-progress",
+        content: "JS"
     },
     {
         id: "js-functions-scope",
-        number: 15,
+        number: 17,
         title: "Functions, Scope, Hoisting, and Closures",
         description: "Function declarations vs. expressions vs. arrow functions, parameters/rest/spread, default values, scope (global, function, block), hoisting behavior, and basic closures",
         image: "./assets/images/logos/JS.webp",
@@ -136,7 +156,7 @@ const lectures = [
     },
     {
         id: "js-control-structures",
-        number: 16,
+        number: 18,
         title: "Control Structures: Conditionals, Loops, and Error Handling",
         description: "If/else, switch, ternary operators; loops (for, while, do-while, for...of/in); break/continue/return; try/catch for errors",
         image: "./assets/images/logos/JS.webp",
@@ -145,7 +165,7 @@ const lectures = [
     },
     {
         id: "js-arrays-methods",
-        number: 17,
+        number: 19,
         title: "Arrays: Methods and Manipulation",
         description: "Array creation, indexing, methods (push/pop/shift/unshift, slice/splice, concat, includes, indexOf); iteration (forEach, map, filter, reduce, every/some/find)",
         image: "./assets/images/logos/JS.webp",
@@ -154,7 +174,7 @@ const lectures = [
     },
     {
         id: "js-objects-es6-destructuring",
-        number: 18,
+        number: 20,
         title: "Objects, Prototypes, and ES6+ Destructuring/Spread Operators",
         description: "Object creation (literals, constructors), accessing properties (dot/bracket), methods, this keyword, Object methods (keys/values/entries, assign), and prototype basics; array/object destructuring with defaults/nesting, spread operator for shallow copies/merging, rest parameters for functions",
         image: "./assets/images/logos/JS.webp",
@@ -163,7 +183,7 @@ const lectures = [
     },
     {
         id: "es6-modules-promises",
-        number: 19,
+        number: 21,
         title: "ES6+: Modules, Promises, and Async Basics",
         description: "Import/export syntax (default/named), dynamic imports; promises (resolve/reject, chaining, .then/.catch), async/await with try/catch",
         image: "./assets/images/logos/JS.webp",
@@ -172,7 +192,7 @@ const lectures = [
     },
     {
         id: "js-dom-selection",
-        number: 20,
+        number: 22,
         title: "JavaScript DOM: Selecting and Traversing Elements",
         description: "DOM tree overview, selecting elements (getElementById, getElementsByClassName/TagName, querySelector/All), node properties (parent/child/siblings), traversing (next/previousElementSibling)",
         image: "./assets/images/logos/JS.webp",
@@ -181,7 +201,7 @@ const lectures = [
     },
     {
         id: "js-dom-manipulation-events",
-        number: 21,
+        number: 23,
         title: "DOM Manipulation and Event Handling",
         description: "Modifying elements (innerHTML/textContent, attributes, styles, classList); creating/removing elements (createElement, appendChild, remove); events (addEventListener, event object, bubbling, preventDefault, delegation)",
         image: "./assets/images/logos/JS.webp",
@@ -190,7 +210,7 @@ const lectures = [
     },
     {
         id: "js-apis-fetch",
-        number: 22,
+        number: 24,
         title: "Working with APIs: Fetch, JSON, and Async Data Handling",
         description: "Fetch API for GET/POST requests, handling responses (json(), text()), headers, async/await with APIs, CORS basics, and error handling for network issues",
         image: "./assets/images/logos/JS.webp",
@@ -199,7 +219,7 @@ const lectures = [
     },
     {
         id: "git-intro",
-        number: 23,
+        number: 25,
         title: "Git Version Control: Basics and Local Workflow",
         description: "Git installation, configuration (user.name/email), initializing repos, staging changes (git add), committing (git commit -m), viewing history (git log/status/diff), and undoing changes (git checkout/reset)",
         image: "./assets/images/logos/github.webp",
@@ -208,7 +228,7 @@ const lectures = [
     },
     {
         id: "github-collaboration",
-        number: 24,
+        number: 26,
         title: "GitHub: Remote Repositories, Branching, and Collaboration",
         description: "Creating/pushing to GitHub repos (git remote/clone/push/pull), branching (git branch/checkout), merging conflicts, pull requests, forks, and collaborative workflows like feature branches and code reviews",
         image: "./assets/images/logos/github.webp",
@@ -217,7 +237,7 @@ const lectures = [
     },
     {
         id: "react-setup-components",
-        number: 25,
+        number: 27,
         title: "React Fundamentals: Setup, Components, and JSX",
         description: "Creating a React app with Create React App or Vite, functional components, JSX syntax (expressions, attributes, fragments), rendering lists, and props for data passing",
         image: "./assets/images/logos/React.webp",
@@ -226,7 +246,7 @@ const lectures = [
     },
     {
         id: "react-state-effects",
-        number: 26,
+        number: 28,
         title: "React State Management and Hooks: useState & useEffect",
         description: "Local state with useState (initializers, updaters), rules of hooks; useEffect for side effects (fetching data, subscriptions), dependencies, cleanup, and lifecycle simulation",
         image: "./assets/images/logos/React.webp",
@@ -235,7 +255,7 @@ const lectures = [
     },
     {
         id: "react-events-forms",
-        number: 27,
+        number: 29,
         title: "React Events, Forms, and Conditional Rendering",
         description: "Event handling in React (onClick, onChange), controlled components for forms, validation, conditional rendering (&&, ternary), and keys in lists",
         image: "./assets/images/logos/React.webp",
@@ -244,7 +264,7 @@ const lectures = [
     },
     {
         id: "react-advanced-hooks",
-        number: 28,
+        number: 30,
         title: "React Advanced Hooks: useReducer, useMemo, useCallback, and Custom Hooks",
         description: "Complex state logic with useReducer (actions, dispatchers); performance optimization using useMemo for computed values and useCallback for stable functions; creating reusable custom hooks for logic extraction",
         image: "./assets/images/logos/React.webp",
@@ -253,7 +273,7 @@ const lectures = [
     },
     {
         id: "react-router-context",
-        number: 29,
+        number: 31,
         title: "React Router, Context API, and Advanced Patterns",
         description: "Installing/configuring React Router (Routes, Route, Link, useParams/useNavigate); Context API for global state (createContext, Provider, useContext); integrating with Tailwind for styling",
         image: "./assets/images/logos/React.webp",
@@ -262,7 +282,7 @@ const lectures = [
     },
     {
         id: "zustand-state",
-        number: 30,
+        number: 32,
         title: "State Management with Zustand",
         description: "Installing Zustand, creating stores (create), selectors (useStore), actions/updates, persistence, and combining with React hooks for scalable global state without prop drilling",
         image: "./assets/images/logos/zus.png",
@@ -271,7 +291,7 @@ const lectures = [
     },
     {
         id: "axios-deployment-ai",
-        number: 31,
+        number: 33,
         title: "Real-World Tools: Axios, Deployment to Render, and AI Integration",
         description: "Using Axios for API requests (interceptors, auth); building/deploying React apps to Render (environment vars, CI/CD with GitHub); leveraging AI tools (e.g., GitHub Copilot, ChatGPT) for code generation, debugging, and problem-solving in frontend development",
         image: "./assets/images/logos/hosting.webp",
@@ -336,7 +356,7 @@ function renderLecturesTable(lecturesToRender) {
                 <span class="status-badge ${statusClass}">${statusText}</span>
             </td>
             <td>
-                <button class="action-btn" data-lecture-id="${lecture.number}">View</button>
+                ${lecture.hidden? "":`<button class='action-btn' data-lecture-id=${lecture.number}>View</button>`}
             </td>
         `;
         

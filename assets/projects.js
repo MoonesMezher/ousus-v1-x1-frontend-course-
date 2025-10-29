@@ -5,9 +5,14 @@ const lectures = [
         link: "/projects/TravelScape",
     },
     {
-        id: "1",
+        id: "2",
         title: "Style Shop",
         link: "/projects/StyleShop",
+    },
+    {
+        id: "3",
+        title: "Next",
+        link: "/projects/Next",
     },
 ];
 

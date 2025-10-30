@@ -14,6 +14,11 @@ const lectures = [
         title: "Next",
         link: "/projects/Next",
     },
+    {
+        id: "4",
+        title: "Eco",
+        link: "/projects/Eco",
+    },
 ];
 
 // DOM Elements

@@ -132,27 +132,27 @@ const lectures = [
         title: "Next Project - Part 2",
         description: "About Us Section, Contact Us Section, Footer",
         image: "./assets/images/logos/Project.webp",
-        status: "in-progress",
+        status: "completed",
         hidden: true,
         content: "HTML, CSS, Tailwind"
     },
     {
         id: "JS-1",
         number: 16,
-        title: "JavaScript Syntax: Variables, Data Types, and Operators",
-        description: "Declaring variables (var, let, const), primitive types (string, number, boolean, null, undefined, symbol, bigint), objects/arrays literals, type coercion, and operators (arithmetic, assignment, comparison, logical, ternary)",
+        title: "JavaScript Syntax: Variables, Data Types, and Operators, Control Flow",
+        description: "Intro, Logs, Declaring variables (var, let, const), primitive types (string, number, boolean, null, undefined, symbol, bigint), objects/arrays literals, type coercion, and operators (arithmetic, assignment, comparison, logical, ternary), if else, while, do while, for, switch",
         image: "./assets/images/logos/JS.webp",
-        status: "in-progress",
+        status: "completed",
         content: "JS"
     },
     {
-        id: "js-functions-scope",
+        id: "JS-2",
         number: 17,
         title: "Functions, Scope, Hoisting, and Closures",
         description: "Function declarations vs. expressions vs. arrow functions, parameters/rest/spread, default values, scope (global, function, block), hoisting behavior, and basic closures",
         image: "./assets/images/logos/JS.webp",
-        status: "not-started",
-        content: "Full content for JS functions and scope..."
+        status: "in-progress",
+        content: "JS"
     },
     {
         id: "js-control-structures",

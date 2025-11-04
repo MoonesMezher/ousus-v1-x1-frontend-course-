@@ -148,20 +148,20 @@ const lectures = [
     {
         id: "JS-2",
         number: 17,
-        title: "Functions, Scope, Hoisting, and Closures",
-        description: "Function declarations vs. expressions vs. arrow functions, parameters/rest/spread, default values, scope (global, function, block), hoisting behavior, and basic closures",
+        title: "Functions, Scope, Arrays",
+        description: "Function declarations vs. expressions vs. arrow functions, parameters/rest/spread, default values, scope (global, function, block), hoisting behavior, HOF, Common Array Methods",
         image: "./assets/images/logos/JS.webp",
-        status: "in-progress",
+        status: "completed",
         content: "JS"
     },
     {
-        id: "js-control-structures",
+        id: "JS-3",
         number: 18,
-        title: "Control Structures: Conditionals, Loops, and Error Handling",
-        description: "If/else, switch, ternary operators; loops (for, while, do-while, for...of/in); break/continue/return; try/catch for errors",
+        title: "Arrays, Objects & Working with Strings, Numbers, and Booleans",
+        description: "Arrays and Objects - Data Structures, Common Array Methods, Iteration Methods, Objects - Key-Value Collections, Working with Objects, Working with Strings, Numbers, and Booleans, Destructuring, Falsy & Truthy Values, Nullish and Other Modern Operators",
         image: "./assets/images/logos/JS.webp",
-        status: "not-started",
-        content: "Full content for JS control flow..."
+        status: "in-progress",
+        content: "JS"
     },
     {
         id: "js-arrays-methods",

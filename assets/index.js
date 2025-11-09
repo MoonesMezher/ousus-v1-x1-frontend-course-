@@ -166,20 +166,20 @@ const lectures = [
     {
         id: "JS-4",
         number: 19,
-        title: "Destructuring, Falsy & Truthy Values, Nullish and Other Modern Operators, DOM",
-        description: "Destructuring, Falsy & Truthy Values, Nullish and Other Modern Operators, DOM Manipulation - Interacting with Web Pages",
+        title: "Destructuring, Falsy & Truthy Values, Nullish and Other Modern Operators",
+        description: "Destructuring, Falsy & Truthy Values, Nullish and Other Modern Operators",
         image: "./assets/images/logos/JS.webp",
-        status: "in-progress",
+        status: "completed",
         content: "JS"
     },
     {
-        id: "js-objects-es6-destructuring",
+        id: "JS-5",
         number: 20,
-        title: "Objects, Prototypes, and ES6+ Destructuring/Spread Operators",
-        description: "Object creation (literals, constructors), accessing properties (dot/bracket), methods, this keyword, Object methods (keys/values/entries, assign), and prototype basics; array/object destructuring with defaults/nesting, spread operator for shallow copies/merging, rest parameters for functions",
+        title: "DOM Manipulation - Interacting with Web Pages",
+        description: "What is the DOM, DOM Tree Structure, Selecting DOM Elements, Manipulating Elements, Creating and Modifying Elements, Events and Forms - User Interaction",
         image: "./assets/images/logos/JS.webp",
-        status: "not-started",
-        content: "Full content for JS objects, prototypes, and ES6 destructuring/spread..."
+        status: "in-progress",
+        content: "JS"
     },
     {
         id: "es6-modules-promises",

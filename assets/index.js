@@ -178,17 +178,17 @@ const lectures = [
         title: "DOM Manipulation - Interacting with Web Pages",
         description: "What is the DOM, DOM Tree Structure, Selecting DOM Elements, Manipulating Elements, Creating and Modifying Elements, Events and Forms - User Interaction",
         image: "./assets/images/logos/JS.webp",
-        status: "in-progress",
+        status: "completed",
         content: "JS"
     },
     {
-        id: "es6-modules-promises",
+        id: "JS-6",
         number: 21,
-        title: "ES6+: Modules, Promises, and Async Basics",
-        description: "Import/export syntax (default/named), dynamic imports; promises (resolve/reject, chaining, .then/.catch), async/await with try/catch",
+        title: "Events and Forms - User Interaction",
+        description: "Understanding Events, Common Event Types, Event Handling Methods, Working with Forms, Event Propagation",
         image: "./assets/images/logos/JS.webp",
-        status: "not-started",
-        content: "Full content for ES6 modules and promises..."
+        status: "in-progress",
+        content: "JS"
     },
     {
         id: "js-dom-selection",

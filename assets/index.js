@@ -187,16 +187,16 @@ const lectures = [
         title: "Events and Forms - User Interaction",
         description: "Understanding Events, Common Event Types, Event Handling Methods, Working with Forms, Event Propagation",
         image: "./assets/images/logos/JS.webp",
-        status: "in-progress",
+        status: "completed",
         content: "JS"
     },
     {
-        id: "js-dom-selection",
+        id: "JS-7",
         number: 22,
-        title: "JavaScript DOM: Selecting and Traversing Elements",
-        description: "DOM tree overview, selecting elements (getElementById, getElementsByClassName/TagName, querySelector/All), node properties (parent/child/siblings), traversing (next/previousElementSibling)",
+        title: "BOM and Asynchronous JavaScript",
+        description: "Browser Object Model (BOM), Window Object, Other BOM Objects, Asynchronous JavaScript, Async Techniques, Working with Time",
         image: "./assets/images/logos/JS.webp",
-        status: "not-started",
+        status: "in-progress",
         content: "Full content for JS DOM selection..."
     },
     {

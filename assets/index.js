@@ -230,19 +230,19 @@ const lectures = [
         id: "REACT",
         number: 26,
         title: "React Fundamentals: Setup, Components, and JSX",
-        description: "React Introduction - What is React and Why Choose It?, Modern React Setup & Development Environment, React Fundamentals: Components, JSX & Props, State Management & Event Handling",
+        description: "React Introduction - What is React and Why Choose It?, Modern React Setup & Development Environment, React Fundamentals: Components, JSX & Props",
         image: "./assets/images/logos/React.webp",
-        status: "in-progress",
-        content: "Full content for GitHub and collaboration..."
+        status: "completed",
+        content: "REACT"
     },
     {
         id: "react-setup-components",
         number: 27,
         title: "React Hooks",
-        description: "Creating a React app with Create React App or Vite, functional components, JSX syntax (expressions, attributes, fragments), rendering lists, and props for data passing",
+        description: "State Management & Event Handling, React Hooks: useEffect & Side Effects, Advanced Hooks & Performance Optimization",
         image: "./assets/images/logos/React.webp",
-        status: "not-started",
-        content: "Full content for React setup and components..."
+        status: "in-progress",
+        content: "REACT"
     },
     {
         id: "react-state-effects",

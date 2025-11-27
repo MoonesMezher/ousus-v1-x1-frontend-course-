@@ -236,22 +236,22 @@ const lectures = [
         content: "REACT"
     },
     {
-        id: "react-setup-components",
+        id: "REACT",
         number: 27,
-        title: "React Hooks",
-        description: "State Management & Event Handling, React Hooks: useEffect & Side Effects, Advanced Hooks & Performance Optimization",
+        title: "React Hooks (useState, useEffect)",
+        description: "State Management & Event Handling, React Hooks: useEffect & Side Effects",
         image: "./assets/images/logos/React.webp",
-        status: "in-progress",
+        status: "completed",
         content: "REACT"
     },
     {
-        id: "react-state-effects",
+        id: "REACT",
         number: 28,
-        title: "React State Management and Hooks: useState & useEffect",
-        description: "Local state with useState (initializers, updaters), rules of hooks; useEffect for side effects (fetching data, subscriptions), dependencies, cleanup, and lifecycle simulation",
+        title: "Advanced Hooks & React Router",
+        description: "Advanced Hooks & Performance Optimization, React Router & Navigation",
         image: "./assets/images/logos/React.webp",
-        status: "not-started",
-        content: "Full content for React state and effects..."
+        status: "in-progress",
+        content: "REACT"
     },
     {
         id: "react-events-forms",

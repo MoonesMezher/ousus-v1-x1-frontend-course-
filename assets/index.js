@@ -245,8 +245,17 @@ const lectures = [
         content: "REACT"
     },
     {
-        id: "REACT",
+        id: "PROJECT",
         number: 28,
+        title: "LSQ Project",
+        description: "Home Page",
+        image: "./assets/images/logos/Project.webp",
+        status: "completed",
+        content: "REACT"
+    },
+    {
+        id: "REACT",
+        number: 29,
         title: "Advanced Hooks & React Router",
         description: "Advanced Hooks & Performance Optimization, React Router & Navigation",
         image: "./assets/images/logos/React.webp",
@@ -255,7 +264,7 @@ const lectures = [
     },
     {
         id: "react-events-forms",
-        number: 29,
+        number: 30,
         title: "React Events, Forms, and Conditional Rendering",
         description: "Event handling in React (onClick, onChange), controlled components for forms, validation, conditional rendering (&&, ternary), and keys in lists",
         image: "./assets/images/logos/React.webp",
@@ -264,7 +273,7 @@ const lectures = [
     },
     {
         id: "react-advanced-hooks",
-        number: 30,
+        number: 31,
         title: "React Advanced Hooks: useReducer, useMemo, useCallback, and Custom Hooks",
         description: "Complex state logic with useReducer (actions, dispatchers); performance optimization using useMemo for computed values and useCallback for stable functions; creating reusable custom hooks for logic extraction",
         image: "./assets/images/logos/React.webp",
@@ -273,7 +282,7 @@ const lectures = [
     },
     {
         id: "react-router-context",
-        number: 31,
+        number: 32,
         title: "React Router, Context API, and Advanced Patterns",
         description: "Installing/configuring React Router (Routes, Route, Link, useParams/useNavigate); Context API for global state (createContext, Provider, useContext); integrating with Tailwind for styling",
         image: "./assets/images/logos/React.webp",
@@ -282,7 +291,7 @@ const lectures = [
     },
     {
         id: "zustand-state",
-        number: 32,
+        number: 33,
         title: "State Management with Zustand",
         description: "Installing Zustand, creating stores (create), selectors (useStore), actions/updates, persistence, and combining with React hooks for scalable global state without prop drilling",
         image: "./assets/images/logos/zus.png",
@@ -291,7 +300,7 @@ const lectures = [
     },
     {
         id: "axios-deployment-ai",
-        number: 33,
+        number: 34,
         title: "Real-World Tools: Axios, Deployment to Render, and AI Integration",
         description: "Using Axios for API requests (interceptors, auth); building/deploying React apps to Render (environment vars, CI/CD with GitHub); leveraging AI tools (e.g., GitHub Copilot, ChatGPT) for code generation, debugging, and problem-solving in frontend development",
         image: "./assets/images/logos/hosting.webp",

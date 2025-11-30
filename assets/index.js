@@ -251,6 +251,7 @@ const lectures = [
         description: "Home Page",
         image: "./assets/images/logos/Project.webp",
         status: "completed",
+        hidden: true,
         content: "REACT"
     },
     {
@@ -259,7 +260,7 @@ const lectures = [
         title: "Advanced Hooks & React Router",
         description: "Advanced Hooks & Performance Optimization, React Router & Navigation",
         image: "./assets/images/logos/React.webp",
-        status: "in-progress",
+        status: "completed",
         content: "REACT"
     },
     {
@@ -268,7 +269,7 @@ const lectures = [
         title: "React Events, Forms, and Conditional Rendering",
         description: "Event handling in React (onClick, onChange), controlled components for forms, validation, conditional rendering (&&, ternary), and keys in lists",
         image: "./assets/images/logos/React.webp",
-        status: "not-started",
+        status: "in-progress",
         content: "Full content for React events and forms..."
     },
     {

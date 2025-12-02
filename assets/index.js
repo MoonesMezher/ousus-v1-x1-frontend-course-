@@ -264,22 +264,22 @@ const lectures = [
         content: "REACT"
     },
     {
-        id: "react-events-forms",
+        id: "API",
         number: 30,
-        title: "React Events, Forms, and Conditional Rendering",
-        description: "Event handling in React (onClick, onChange), controlled components for forms, validation, conditional rendering (&&, ternary), and keys in lists",
-        image: "./assets/images/logos/React.webp",
-        status: "in-progress",
-        content: "Full content for React events and forms..."
+        title: "Understanding APIs and Web Communication",
+        description: "APIs and JSON Data Format, Backend Role (Server), Frontend Role (User Interface), Request Components, Response Components",
+        image: "./assets/images/logos/API.webp",
+        status: "completed",
+        content: "API"
     },
     {
-        id: "react-advanced-hooks",
+        id: "REACT",
         number: 31,
-        title: "React Advanced Hooks: useReducer, useMemo, useCallback, and Custom Hooks",
-        description: "Complex state logic with useReducer (actions, dispatchers); performance optimization using useMemo for computed values and useCallback for stable functions; creating reusable custom hooks for logic extraction",
+        title: "Dealing With APIs & State Management System, External Libraries",
+        description: "React Router DOM, State Management: Context API & Zustand, External Libraries & Ecosystem",
         image: "./assets/images/logos/React.webp",
-        status: "not-started",
-        content: "Full content for React advanced hooks..."
+        status: "in-progress",
+        content: "REACT"
     },
     {
         id: "react-router-context",

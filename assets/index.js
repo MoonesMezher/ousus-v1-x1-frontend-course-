@@ -275,20 +275,21 @@ const lectures = [
     {
         id: "REACT",
         number: 31,
-        title: "Dealing With APIs & State Management System, External Libraries",
-        description: "React Router DOM, State Management: Context API & Zustand, External Libraries & Ecosystem",
+        title: "Dealing With APIs",
+        description: "useParams, Axios, Real Examples",
+        image: "./assets/images/logos/React.webp",
+        status: "completed",
+        content: "REACT",
+        hidden: true
+    },
+    {
+        id: "REACT",
+        number: 32,
+        title: "Context API, and State Management System, External Libraries",
+        description: "Context API for global state (createContext, Provider, useContext), State Management: Context API & Zustand, External Libraries & Ecosystem",
         image: "./assets/images/logos/React.webp",
         status: "in-progress",
         content: "REACT"
-    },
-    {
-        id: "react-router-context",
-        number: 32,
-        title: "React Router, Context API, and Advanced Patterns",
-        description: "Installing/configuring React Router (Routes, Route, Link, useParams/useNavigate); Context API for global state (createContext, Provider, useContext); integrating with Tailwind for styling",
-        image: "./assets/images/logos/React.webp",
-        status: "not-started",
-        content: "Full content for React Router and Context..."
     },
     {
         id: "zustand-state",

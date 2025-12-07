@@ -286,28 +286,30 @@ const lectures = [
         id: "REACT",
         number: 32,
         title: "Context API, and State Management System, External Libraries",
-        description: "Context API for global state (createContext, Provider, useContext), State Management: Context API & Zustand, External Libraries & Ecosystem",
+        description: "Context API for global state (createContext, Provider, useContext), State Management wit Zustand, External Libraries & Ecosystem",
         image: "./assets/images/logos/React.webp",
-        status: "in-progress",
+        status: "completed",
         content: "REACT"
     },
     {
-        id: "zustand-state",
+        id: "PROJECT",
         number: 33,
-        title: "State Management with Zustand",
-        description: "Installing Zustand, creating stores (create), selectors (useStore), actions/updates, persistence, and combining with React hooks for scalable global state without prop drilling",
-        image: "./assets/images/logos/zus.png",
+        title: "Final Project - Part 1",
+        description: "",
+        image: "./assets/images/logos/project.webp",
+        hidden: true,
         status: "not-started",
-        content: "Full content for Zustand..."
+        content: "PROJECT"
     },
     {
-        id: "axios-deployment-ai",
+        id: "PROJECT",
         number: 34,
-        title: "Real-World Tools: Axios, Deployment to Render, and AI Integration",
-        description: "Using Axios for API requests (interceptors, auth); building/deploying React apps to Render (environment vars, CI/CD with GitHub); leveraging AI tools (e.g., GitHub Copilot, ChatGPT) for code generation, debugging, and problem-solving in frontend development",
-        image: "./assets/images/logos/hosting.webp",
+        title: "Final Project - Part 2",
+        description: "",
+        image: "./assets/images/logos/project.webp",
+        hidden: true,
         status: "not-started",
-        content: "Full content for Axios, deployment, and AI..."
+        content: "PROJECT"
     }
 ];
 

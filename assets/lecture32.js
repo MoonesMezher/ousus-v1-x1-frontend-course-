@@ -243,30 +243,37 @@ function TotalAnimals() {
   return <div>Total animals: {total}</div>;
 }
 
-// Example 5: Zustand with TypeScript
-import { create } from 'zustand';
-import { devtools } from 'zustand/middleware';
+// Example 5: Context with State
+import { createContext, useEffect, useState } from "react";
 
-interface AppState {
-  count: number;
-  user: User | null;
-  increment: () => void;
-  decrement: () => void;
-  setUser: (user: User) => void;
+const TodoContext = createContext();
+const TodoProvider = ({ children }) => {
+    const [todo, setTodo] = useState(
+        localStorage.getItem("todo")
+        ? JSON.parse(localStorage.getItem("todo"))
+        : []
+    );
+
+    const addTodo = (item) => {
+        setTodo(prev => [...prev, item]);
+    }
+
+    const removeTodo = (item) => {
+        setTodo(prev => prev.filter(e => e !== item));
+    }
+
+    useEffect(() => {
+        localStorage.setItem("todo", JSON.stringify(todo));
+    }, [todo]); 
+
+    return (
+        <TodoContext value={{ todo, addTodo, removeTodo }}>
+            {children}
+        </TodoContext>
+    )
 }
 
-const useAppStore = create<AppState>()(
-  devtools(
-    (set) => ({
-      count: 0,
-      user: null,
-      increment: () => set((state) => ({ count: state.count + 1 })),
-      decrement: () => set((state) => ({ count: state.count - 1 })),
-      setUser: (user) => set({ user }),
-    }),
-    { name: 'AppStore' }
-  )
-);
+export { TodoProvider, TodoContext }
 
 // Example 6: Combining Context and Zustand
 // Use Context for UI state (theme, modals)
@@ -404,19 +411,11 @@ const useStore = create(
                     <li><strong>FormatJS</strong>: Message formatting and pluralization</li>
                 </ul>
 
-                <br><hr><br>
-                <div dir="rtl">
-                    <h3>تعزيز React بالمكتبات الخارجية</h3>
-                    <p>استفد من نظام React البيئي الغني لإضافة ميزات قوية مثل الرسوم المتحركة، التدويل، النماذج، وتصور البيانات.</p>
-                    
-                    <h3>مكتبات الرسوم المتحركة:</h3>
-                    <ul>
-                        <li><strong>Framer Motion</strong>: رسوم متحركة جاهزة للإنتاج</li>
-                        <li><strong>React Spring</strong>: رسوم متحركة قائمة على الفيزياء</li>
-                        <li><strong>React Transition Group</strong>: تحولات CSS</li>
-                        <li><strong>AutoAnimate</strong>: رسوم متحركة بدون تكوين</li>
-                    </ul>
-                </div>
+                <h3>Other:</h3>
+                <ul>
+                    <li><strong>Swiper</strong>: Powerful Sliders</li>
+                    <li><strong>Sonner</strong>: Powerfull popups</li>
+                </ul>
             `,
             examples: [
                 {

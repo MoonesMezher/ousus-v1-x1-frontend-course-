@@ -298,7 +298,7 @@ const lectures = [
         description: "",
         image: "./assets/images/logos/project.webp",
         hidden: true,
-        status: "not-started",
+        status: "completed",
         content: "PROJECT"
     },
     {
@@ -308,7 +308,7 @@ const lectures = [
         description: "",
         image: "./assets/images/logos/project.webp",
         hidden: true,
-        status: "not-started",
+        status: "in-progress",
         content: "PROJECT"
     }
 ];

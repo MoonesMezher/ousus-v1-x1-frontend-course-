@@ -308,9 +308,9 @@ const lectures = [
         description: "",
         image: "./assets/images/logos/project.webp",
         hidden: true,
-        status: "in-progress",
+        status: "completed",
         content: "PROJECT"
-    }
+    },
 ];
 
 // DOM Elements
